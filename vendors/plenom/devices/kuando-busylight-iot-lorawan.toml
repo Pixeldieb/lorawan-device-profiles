@@ -1,0 +1,12 @@
+[device]
+id = "33a2fcb5-ec7f-4047-9a66-cc3c894ae981"
+name = "kuando Busylight IoT LoRaWAN"
+description = """
+A Visual Indicator for Status, Cues and Notifications
+LoRaWAN Class C device
+"""
+firmware = []
+
+[device.metadata]
+product_url = "https://www.plenom.com/products/kuando-busylight-iot-lorawan/"
+documentation_url = "https://www.plenom.com/products/kuando-busylight-iot-lorawan/"
