@@ -101,5 +101,38 @@
         "pulse1": 42
       }
     }
+  },
+  {
+    "name": "Test decode ERS Eye occupancy payload",
+    "input": {
+      "fPort": 5,
+      "bytes": [
+        1,
+        0,
+        234,
+        2,
+        55,
+        4,
+        0,
+        39,
+        5,
+        6,
+        7,
+        13,
+        98,
+        17,
+        2
+      ]
+    },
+    "expected": {
+      "data": {
+        "temperature": 23.4,
+        "humidity": 55,
+        "light": 39,
+        "motion": 6,
+        "vdd": 3426,
+        "occupancy": 2
+      }
+    }
   }
 ]

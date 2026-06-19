@@ -6,6 +6,7 @@ ouis = ["24e124"]
 devices = [
     "milesight-am102-l.toml",
     "milesight-am102.toml",
+    "milesight-am308-915m.toml",
     "milesight-em300-cl.toml",
     "milesight-em300-di.toml",
     "milesight-em300-mcs.toml",

@@ -1,0 +1,15 @@
+[device]
+id = "0a154169-0fa8-4b37-9d4e-42f6d63efadc"
+name = "ERS Eye LNA"
+description = "Indoor occupancy and climate sensor with temperature, humidity, light, PIR motion, and Grid-Eye occupancy sensing."
+
+[[device.firmware]]
+version = "1.0"
+profiles = [
+    "US915-1_0_3.toml",
+]
+codec = "elsys.js"
+
+[device.metadata]
+product_url = "https://www.elsys.se/en/ers-eye/"
+documentation_url = "https://elsys.se/public/datasheets/ERS_Eye_datasheet.pdf"

@@ -1,0 +1,16 @@
+[device]
+id = "584870cc-91f9-4ef7-8ca7-2c09d70ae308"
+name = "Milesight AM308-915M"
+description = "Indoor Ambiance Sensor (9-in-1)"
+
+[[device.firmware]]
+version = "1.3"
+profiles = [
+    "AU915-1_0_3.toml",
+    "US915-1_0_3.toml",
+]
+codec = "am308.js"
+
+[device.metadata]
+product_url = "https://www.milesight.com/iot/product/lorawan-sensor/am300"
+documentation_url = "https://www.milesight.com/iot/product/lorawan-sensor/am300"
