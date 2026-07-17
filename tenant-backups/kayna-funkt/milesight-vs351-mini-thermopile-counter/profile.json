@@ -1,0 +1,86 @@
+{
+  "abp_params": null,
+  "adr_algorithm_id": "default",
+  "allow_roaming": false,
+  "app_layer_params": {},
+  "auto_detect_measurements": true,
+  "class_b_params": null,
+  "class_c_params": null,
+  "description": "",
+  "device_status_req_interval": 1,
+  "firmware_version": "",
+  "flush_queue_on_activate": true,
+  "mac_version": "1.0.3",
+  "measurements": {
+    "battery": {
+      "kind": "GAUGE",
+      "name": "Batteriestand"
+    },
+    "device_status": {
+      "kind": "STRING",
+      "name": ""
+    },
+    "firmware_version": {
+      "kind": "STRING",
+      "name": ""
+    },
+    "hardware_version": {
+      "kind": "STRING",
+      "name": ""
+    },
+    "ipso_version": {
+      "kind": "STRING",
+      "name": ""
+    },
+    "lorawan_class": {
+      "kind": "STRING",
+      "name": ""
+    },
+    "period_in": {
+      "kind": "GAUGE",
+      "name": "Zeitraum Rein"
+    },
+    "period_out": {
+      "kind": "GAUGE",
+      "name": "Zeitraum Raus"
+    },
+    "power_status": {
+      "kind": "STRING",
+      "name": ""
+    },
+    "sn": {
+      "kind": "STRING",
+      "name": ""
+    },
+    "temperature": {
+      "kind": "GAUGE",
+      "name": "Temperatur"
+    },
+    "temperature_alarm": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "total_in": {
+      "kind": "GAUGE",
+      "name": "Gesamt Rein"
+    },
+    "total_out": {
+      "kind": "GAUGE",
+      "name": "Gesamt Raus"
+    }
+  },
+  "name": "Milesight VS351 Mini Thermopile Counter",
+  "payload_codec_runtime": "JS",
+  "reg_params_revision": "A",
+  "region": "EU868",
+  "region_config_id": null,
+  "relay_params": null,
+  "rx1_delay": 0,
+  "supported_uplink_data_rates": [],
+  "supports_class_b": false,
+  "supports_class_c": false,
+  "supports_otaa": true,
+  "tags": {},
+  "uplink_interval": 3600,
+  "vendor_profile_id": 0
+}

@@ -1,0 +1,93 @@
+{
+  "abp_params": null,
+  "adr_algorithm_id": "default",
+  "allow_roaming": false,
+  "app_layer_params": {
+    "ts003_f_port": 202,
+    "ts003_version": null,
+    "ts004_f_port": 201,
+    "ts004_version": null,
+    "ts005_f_port": 200,
+    "ts005_version": null
+  },
+  "auto_detect_measurements": true,
+  "class_b_params": null,
+  "class_c_params": null,
+  "description": "",
+  "device_status_req_interval": 1,
+  "firmware_version": "",
+  "flush_queue_on_activate": true,
+  "mac_version": "1.0.3",
+  "measurements": {
+    "additional_measurements_transfer_4": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "air_quality": {
+      "kind": "STRING",
+      "name": "Luftqualität"
+    },
+    "co2": {
+      "kind": "GAUGE",
+      "name": "CO2"
+    },
+    "dew_point": {
+      "kind": "GAUGE",
+      "name": "Taupunkt"
+    },
+    "humidity": {
+      "kind": "GAUGE",
+      "name": "Luftfeuchtigkeit"
+    },
+    "protocol_device_id": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "protocol_device_id_hex": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "protocol_lorawan_f_port": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "protocol_name": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "protocol_sensor_port_id": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "protocol_vendor_id": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "protocol_vendor_id_hex": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "protocol_version": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "temperature": {
+      "kind": "GAUGE",
+      "name": "Temperatur"
+    }
+  },
+  "name": "DEOS Co2 Raumluftampel 2020",
+  "payload_codec_runtime": "JS",
+  "reg_params_revision": "A",
+  "region": "EU868",
+  "region_config_id": null,
+  "relay_params": null,
+  "rx1_delay": 0,
+  "supported_uplink_data_rates": [],
+  "supports_class_b": false,
+  "supports_class_c": false,
+  "supports_otaa": true,
+  "tags": {},
+  "uplink_interval": 3600,
+  "vendor_profile_id": 0
+}

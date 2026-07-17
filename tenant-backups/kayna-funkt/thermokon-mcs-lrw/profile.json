@@ -1,0 +1,74 @@
+{
+  "abp_params": null,
+  "adr_algorithm_id": "default",
+  "allow_roaming": false,
+  "app_layer_params": {},
+  "auto_detect_measurements": true,
+  "class_b_params": null,
+  "class_c_params": null,
+  "description": "Indoor Multicompact Sensor\n\nSource: https://github.com/TheThingsNetwork/lorawan-devices",
+  "device_status_req_interval": 1,
+  "firmware_version": "",
+  "flush_queue_on_activate": true,
+  "mac_version": "1.0.4",
+  "measurements": {
+    "DEV_KEY": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "OCCU0_CNT": {
+      "kind": "GAUGE",
+      "name": "Belegung Zähler"
+    },
+    "OCCU0_STATE": {
+      "kind": "STRING",
+      "name": "Belegung Status"
+    },
+    "REED0_CNT": {
+      "kind": "GAUGE",
+      "name": "Reedkontakt 0 Zähler"
+    },
+    "REED0_STATE": {
+      "kind": "STRING",
+      "name": "Reedkontat 0 Status"
+    },
+    "REED1_CNT": {
+      "kind": "GAUGE",
+      "name": "Reedkontakt 1 Zähler"
+    },
+    "REED1_STATE": {
+      "kind": "STRING",
+      "name": "Reedkontakt 1 Status"
+    },
+    "RHUM": {
+      "kind": "GAUGE",
+      "name": "Luftfeuchtigkeit in %"
+    },
+    "TEMP": {
+      "kind": "GAUGE",
+      "name": "Temperatur in C"
+    },
+    "VBAT": {
+      "kind": "GAUGE",
+      "name": "Batterie in Volt"
+    },
+    "VISIBLE_LIGHT": {
+      "kind": "GAUGE",
+      "name": "Sichtbares Licht"
+    }
+  },
+  "name": "Thermokon MCS LRW",
+  "payload_codec_runtime": "JS",
+  "reg_params_revision": "RP002-1.0.1",
+  "region": "EU868",
+  "region_config_id": null,
+  "relay_params": null,
+  "rx1_delay": 0,
+  "supported_uplink_data_rates": [],
+  "supports_class_b": false,
+  "supports_class_c": false,
+  "supports_otaa": true,
+  "tags": {},
+  "uplink_interval": 3600,
+  "vendor_profile_id": 0
+}

@@ -1,0 +1,126 @@
+{
+  "abp_params": null,
+  "adr_algorithm_id": "default",
+  "allow_roaming": false,
+  "app_layer_params": {},
+  "auto_detect_measurements": true,
+  "class_b_params": null,
+  "class_c_params": null,
+  "description": "",
+  "device_status_req_interval": 1,
+  "firmware_version": "",
+  "flush_queue_on_activate": true,
+  "mac_version": "1.0.3",
+  "measurements": {
+    "err": {
+      "kind": "STRING",
+      "name": "Error"
+    },
+    "messages_0_battery": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "messages_0_channel": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "messages_0_measurementId": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "messages_0_measurementValue": {
+      "kind": "GAUGE",
+      "name": "Temperature in C"
+    },
+    "messages_0_sensorId": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "messages_0_type": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "messages_1_hardwareVersion": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "messages_1_interval": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "messages_1_measurementId": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "messages_1_measurementValue": {
+      "kind": "GAUGE",
+      "name": "relative Luftfeuchte in %"
+    },
+    "messages_1_softwareVersion": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "messages_1_type": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "messages_2_battery": {
+      "kind": "GAUGE",
+      "name": "Battery in %"
+    },
+    "messages_2_measurementId": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "messages_2_measurementValue": {
+      "kind": "GAUGE",
+      "name": "ppm CO2"
+    },
+    "messages_2_type": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "messages_3_battery": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "messages_3_interval": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "messages_3_type": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "messages_4_interval": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "messages_4_type": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "payload": {
+      "kind": "STRING",
+      "name": "Payload"
+    },
+    "valid": {
+      "kind": "STRING",
+      "name": "Valid"
+    }
+  },
+  "name": "SenseCAP S2103 rHum & Temp & CO2",
+  "payload_codec_runtime": "JS",
+  "reg_params_revision": "A",
+  "region": "EU868",
+  "region_config_id": null,
+  "relay_params": null,
+  "rx1_delay": 0,
+  "supported_uplink_data_rates": [],
+  "supports_class_b": false,
+  "supports_class_c": false,
+  "supports_otaa": true,
+  "tags": {},
+  "uplink_interval": 3600,
+  "vendor_profile_id": 0
+}

@@ -1,0 +1,46 @@
+{
+  "abp_params": null,
+  "adr_algorithm_id": "default",
+  "allow_roaming": false,
+  "app_layer_params": {},
+  "auto_detect_measurements": true,
+  "class_b_params": null,
+  "class_c_params": null,
+  "description": "The Milesight LoRaWAN® EM300-MCS magnetic contact switch can be mounted to any door or window to detect an opening or closing event. It adds physical security monitoring to your location by alarming for intrusion or unauthorized entry to your monitored conditions.\n\nSource: https://github.com/TheThingsNetwork/lorawan-devices",
+  "device_status_req_interval": 1,
+  "firmware_version": "",
+  "flush_queue_on_activate": true,
+  "mac_version": "1.0.3",
+  "measurements": {
+    "battery": {
+      "kind": "GAUGE",
+      "name": "Batterie in V"
+    },
+    "humidity": {
+      "kind": "GAUGE",
+      "name": "Luftfeuchtigkeit in %"
+    },
+    "magnet_status": {
+      "kind": "STRING",
+      "name": "Status Tür"
+    },
+    "temperature": {
+      "kind": "GAUGE",
+      "name": "Temperatur in C"
+    }
+  },
+  "name": "EM300-MCS",
+  "payload_codec_runtime": "JS",
+  "reg_params_revision": "A",
+  "region": "EU868",
+  "region_config_id": null,
+  "relay_params": null,
+  "rx1_delay": 0,
+  "supported_uplink_data_rates": [],
+  "supports_class_b": false,
+  "supports_class_c": false,
+  "supports_otaa": true,
+  "tags": {},
+  "uplink_interval": 3600,
+  "vendor_profile_id": 0
+}

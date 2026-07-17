@@ -1,0 +1,141 @@
+{
+  "abp_params": null,
+  "adr_algorithm_id": "default",
+  "allow_roaming": false,
+  "app_layer_params": {
+    "ts003_f_port": 202,
+    "ts003_version": null,
+    "ts004_f_port": 201,
+    "ts004_version": null,
+    "ts005_f_port": 200,
+    "ts005_version": null
+  },
+  "auto_detect_measurements": true,
+  "class_b_params": null,
+  "class_c_params": null,
+  "description": "",
+  "device_status_req_interval": 1,
+  "firmware_version": "",
+  "flush_queue_on_activate": true,
+  "mac_version": "1.0.2",
+  "measurements": {
+    "Active Energy Export T1_unit": {
+      "kind": "STRING",
+      "name": "Active Energy Export T1_unit"
+    },
+    "Active Energy Export T1_value": {
+      "kind": "COUNTER",
+      "name": "Active Energy Export T1_value"
+    },
+    "Active Energy Export T2_unit": {
+      "kind": "STRING",
+      "name": "Active Energy Export T2_unit"
+    },
+    "Active Energy Export T2_value": {
+      "kind": "COUNTER",
+      "name": "Active Energy Export T2_value"
+    },
+    "Active Energy Import T1_unit": {
+      "kind": "STRING",
+      "name": "Active Energy Import T1_unit"
+    },
+    "Active Energy Import T1_value": {
+      "kind": "COUNTER",
+      "name": "Active Energy Import T1_value"
+    },
+    "Active Energy Import T2_unit": {
+      "kind": "STRING",
+      "name": "Active Energy Import T2_unit"
+    },
+    "Active Energy Import T2_value": {
+      "kind": "COUNTER",
+      "name": "Active Energy Import T2_value"
+    },
+    "MID year_value": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "current-transformer primary_value": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "current-transformer secondary_value": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "errorcode_CTRatioChange": {
+      "kind": "STRING",
+      "name": "errorcode_CTRatioChange"
+    },
+    "errorcode_ImpulseRatioChange": {
+      "kind": "STRING",
+      "name": "errorcode_ImpulseRatioChange"
+    },
+    "errorcode_ImpulseWidthChange": {
+      "kind": "STRING",
+      "name": "errorcode_ImpulseWidthChange"
+    },
+    "errorcode_LogbookFull": {
+      "kind": "STRING",
+      "name": "errorcode_LogbookFull"
+    },
+    "errorcode_PowerFail": {
+      "kind": "STRING",
+      "name": "errorcode_PowerFail"
+    },
+    "errorcode_TimeChanged": {
+      "kind": "STRING",
+      "name": "errorcode_TimeChanged"
+    },
+    "errorcode_VTRatioChange": {
+      "kind": "STRING",
+      "name": "errorcode_VTRatioChange"
+    },
+    "errorcode_value": {
+      "kind": "STRING",
+      "name": "errorcode_value"
+    },
+    "medium_desc": {
+      "kind": "STRING",
+      "name": "medium_desc"
+    },
+    "medium_type": {
+      "kind": "STRING",
+      "name": "medium_type"
+    },
+    "meter-typ_value": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "serial-number_value": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "timeStamp": {
+      "kind": "STRING",
+      "name": "timeStamp"
+    },
+    "voltage-transformer primary_value": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "voltage-transformer secondary_value": {
+      "kind": "UNKNOWN",
+      "name": ""
+    }
+  },
+  "name": "EMU Professional II",
+  "payload_codec_runtime": "JS",
+  "reg_params_revision": "A",
+  "region": "EU868",
+  "region_config_id": "eu868",
+  "relay_params": null,
+  "rx1_delay": 0,
+  "supported_uplink_data_rates": [],
+  "supports_class_b": false,
+  "supports_class_c": false,
+  "supports_otaa": true,
+  "tags": {},
+  "uplink_interval": 3600,
+  "vendor_profile_id": 0
+}

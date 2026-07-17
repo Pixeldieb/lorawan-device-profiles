@@ -1,0 +1,125 @@
+{
+  "abp_params": null,
+  "adr_algorithm_id": "default",
+  "allow_roaming": false,
+  "app_layer_params": {
+    "ts003_f_port": 202,
+    "ts003_version": null,
+    "ts004_f_port": 201,
+    "ts004_version": null,
+    "ts005_f_port": 200,
+    "ts005_version": null
+  },
+  "auto_detect_measurements": true,
+  "class_b_params": null,
+  "class_c_params": null,
+  "description": "",
+  "device_status_req_interval": 1,
+  "firmware_version": "",
+  "flush_queue_on_activate": true,
+  "mac_version": "1.0.3",
+  "measurements": {
+    "payload_battery_vol": {
+      "kind": "GAUGE",
+      "name": "Batteriestand in V"
+    },
+    "payload_fillinglvl": {
+      "kind": "GAUGE",
+      "name": "Füllstand in %"
+    },
+    "payload_firmware_revision": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "payload_gps_count": {
+      "kind": "STRING",
+      "name": ""
+    },
+    "payload_hardware_revision": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "payload_latitude": {
+      "kind": "STRING",
+      "name": "Latitude"
+    },
+    "payload_longitude": {
+      "kind": "STRING",
+      "name": "Longitude"
+    },
+    "payload_lora_count": {
+      "kind": "COUNTER",
+      "name": ""
+    },
+    "payload_lora_data_transmission_active": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "payload_lora_downlink_config": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "payload_lora_downlink_config_ack": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "payload_lora_message_type": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "payload_lora_next_transmission": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "payload_lora_number_of_transmission": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "payload_lora_spreading_factor": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "payload_lora_transmission_interval": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "payload_part_number": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "payload_payload": {
+      "kind": "STRING",
+      "name": "Payload"
+    },
+    "payload_proxx_mm": {
+      "kind": "GAUGE",
+      "name": "Distanz in mm"
+    },
+    "payload_serial_nr": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "payload_temp": {
+      "kind": "GAUGE",
+      "name": "Temperatur in C"
+    },
+    "payload_us_sensor_count": {
+      "kind": "UNKNOWN",
+      "name": ""
+    }
+  },
+  "name": "Pepperl und Fuchs Wilsen WS-UCC2500-F406-B41-01-02 ",
+  "payload_codec_runtime": "JS",
+  "reg_params_revision": "A",
+  "region": "EU868",
+  "region_config_id": null,
+  "relay_params": null,
+  "rx1_delay": 0,
+  "supported_uplink_data_rates": [],
+  "supports_class_b": false,
+  "supports_class_c": false,
+  "supports_otaa": true,
+  "tags": {},
+  "uplink_interval": 3600,
+  "vendor_profile_id": 0
+}

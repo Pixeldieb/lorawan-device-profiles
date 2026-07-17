@@ -1,0 +1,65 @@
+{
+  "abp_params": null,
+  "adr_algorithm_id": "default",
+  "allow_roaming": false,
+  "app_layer_params": {
+    "ts003_f_port": 202,
+    "ts003_version": null,
+    "ts004_f_port": 201,
+    "ts004_version": null,
+    "ts005_f_port": 200,
+    "ts005_version": null
+  },
+  "auto_detect_measurements": true,
+  "class_b_params": null,
+  "class_c_params": null,
+  "description": "https://github.com/Makerfabs/Agrosense-Decoder/blob/main/AgroSense_Soil%20%26%20Air%20EC-TH%20Pro%20LoRaWAN/TTN.js\nDokumentation\n\nhttps://wiki.makerfabs.com/AgroSense_LoRaWAN%C2%AE_Sensor_Instruction_Manual.html#7-resource",
+  "device_status_req_interval": 1,
+  "firmware_version": "",
+  "flush_queue_on_activate": true,
+  "mac_version": "1.0.3",
+  "measurements": {
+    "field1": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "field2": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "field3": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "field4": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "field5": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "field6": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "field7": {
+      "kind": "UNKNOWN",
+      "name": ""
+    }
+  },
+  "name": "AgroSense_Soil & Air EC-TH Pro LoRaWAN",
+  "payload_codec_runtime": "JS",
+  "reg_params_revision": "A",
+  "region": "EU868",
+  "region_config_id": null,
+  "relay_params": null,
+  "rx1_delay": 0,
+  "supported_uplink_data_rates": [],
+  "supports_class_b": false,
+  "supports_class_c": false,
+  "supports_otaa": true,
+  "tags": {},
+  "uplink_interval": 3600,
+  "vendor_profile_id": 0
+}

@@ -1,0 +1,189 @@
+{
+  "abp_params": null,
+  "adr_algorithm_id": "default",
+  "allow_roaming": false,
+  "app_layer_params": {
+    "ts003_f_port": 202,
+    "ts003_version": null,
+    "ts004_f_port": 201,
+    "ts004_version": null,
+    "ts005_f_port": 200,
+    "ts005_version": null
+  },
+  "auto_detect_measurements": true,
+  "class_b_params": null,
+  "class_c_params": null,
+  "description": "Wetterstation mit 7 Parametern\n1 AirTemperature Modbus 0\n2 AirHumidity Modbus 2\n3 BarometricPressure Modbus 4\n4 LightIntensity Modbus 6\n5 AverageWindDirection Modbus 12\n6 AverageWindSpeed Modbus 18\n7 RainIntensity Modbus 24",
+  "device_status_req_interval": 1,
+  "firmware_version": "",
+  "flush_queue_on_activate": true,
+  "mac_version": "1.0.3",
+  "measurements": {
+    "err": {
+      "kind": "STRING",
+      "name": "Error"
+    },
+    "messages_0_0_Battery(%)": {
+      "kind": "GAUGE",
+      "name": "Battery in %"
+    },
+    "messages_0_0_Firmware Version": {
+      "kind": "STRING",
+      "name": "Firmware Version"
+    },
+    "messages_0_0_Hardware Version": {
+      "kind": "STRING",
+      "name": "Hardware Version"
+    },
+    "messages_0_0_measureInterval": {
+      "kind": "STRING",
+      "name": ""
+    },
+    "messages_0_0_measurementId": {
+      "kind": "STRING",
+      "name": "Measurement ID"
+    },
+    "messages_0_0_measurementValue": {
+      "kind": "GAUGE",
+      "name": "Temperature in Celsius"
+    },
+    "messages_0_0_thresholdMeasureInterval": {
+      "kind": "STRING",
+      "name": ""
+    },
+    "messages_0_0_type": {
+      "kind": "STRING",
+      "name": ""
+    },
+    "messages_0_1_measurementId": {
+      "kind": "STRING",
+      "name": ""
+    },
+    "messages_0_1_measurementValue": {
+      "kind": "GAUGE",
+      "name": "Humidity in %"
+    },
+    "messages_0_1_type": {
+      "kind": "STRING",
+      "name": ""
+    },
+    "messages_1_0_dataloggerAnalogInterface": {
+      "kind": "STRING",
+      "name": ""
+    },
+    "messages_1_0_dataloggerAnalogType": {
+      "kind": "STRING",
+      "name": ""
+    },
+    "messages_1_0_dataloggerGPIOInput": {
+      "kind": "STRING",
+      "name": ""
+    },
+    "messages_1_0_dataloggerProtocol": {
+      "kind": "STRING",
+      "name": ""
+    },
+    "messages_1_0_measurementId": {
+      "kind": "STRING",
+      "name": ""
+    },
+    "messages_1_0_measurementValue": {
+      "kind": "GAUGE",
+      "name": "Barometric Pressure Pa"
+    },
+    "messages_1_0_type": {
+      "kind": "STRING",
+      "name": ""
+    },
+    "messages_1_1_measurementId": {
+      "kind": "STRING",
+      "name": ""
+    },
+    "messages_1_1_measurementValue": {
+      "kind": "GAUGE",
+      "name": "Light Intensity Lux"
+    },
+    "messages_1_1_type": {
+      "kind": "STRING",
+      "name": ""
+    },
+    "messages_2_0_measurementId": {
+      "kind": "STRING",
+      "name": ""
+    },
+    "messages_2_0_measurementValue": {
+      "kind": "GAUGE",
+      "name": "Average Wind Direction"
+    },
+    "messages_2_0_type": {
+      "kind": "STRING",
+      "name": ""
+    },
+    "messages_2_1_measurementId": {
+      "kind": "STRING",
+      "name": ""
+    },
+    "messages_2_1_measurementValue": {
+      "kind": "GAUGE",
+      "name": "Average wind speed m/s"
+    },
+    "messages_2_1_type": {
+      "kind": "STRING",
+      "name": ""
+    },
+    "messages_3_0_measurementId": {
+      "kind": "STRING",
+      "name": ""
+    },
+    "messages_3_0_measurementValue": {
+      "kind": "GAUGE",
+      "name": "Rain intensity mm/h"
+    },
+    "messages_3_0_type": {
+      "kind": "STRING",
+      "name": ""
+    },
+    "messages_4_0_Battery(%)": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "messages_4_0_Firmware Version": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "messages_4_0_Hardware Version": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "messages_4_0_measureInterval": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "messages_4_0_thresholdMeasureInterval": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "payload": {
+      "kind": "STRING",
+      "name": ""
+    },
+    "valid": {
+      "kind": "STRING",
+      "name": ""
+    }
+  },
+  "name": "SenseCAP S2100 V700-A Wetterstation",
+  "payload_codec_runtime": "JS",
+  "reg_params_revision": "A",
+  "region": "EU868",
+  "region_config_id": null,
+  "relay_params": null,
+  "rx1_delay": 0,
+  "supported_uplink_data_rates": [],
+  "supports_class_b": false,
+  "supports_class_c": false,
+  "supports_otaa": true,
+  "tags": {},
+  "uplink_interval": 3600,
+  "vendor_profile_id": 0
+}

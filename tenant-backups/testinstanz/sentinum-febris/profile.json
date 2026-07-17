@@ -1,0 +1,86 @@
+{
+  "abp_params": null,
+  "adr_algorithm_id": "default",
+  "allow_roaming": false,
+  "app_layer_params": {},
+  "auto_detect_measurements": true,
+  "class_b_params": null,
+  "class_c_params": null,
+  "description": "",
+  "device_status_req_interval": 1,
+  "firmware_version": "",
+  "flush_queue_on_activate": true,
+  "mac_version": "1.0.2",
+  "measurements": {
+    "alarm": {
+      "kind": "ABSOLUTE",
+      "name": "Erreichen eines Alarms"
+    },
+    "base_id": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "battery_voltage": {
+      "kind": "GAUGE",
+      "name": "Batteriespannung in V"
+    },
+    "co2_ppm": {
+      "kind": "GAUGE",
+      "name": "CO2 parts per Million"
+    },
+    "dew_point": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "humidity": {
+      "kind": "GAUGE",
+      "name": "Luftfeuchtigkeit"
+    },
+    "internal_temperature": {
+      "kind": "GAUGE",
+      "name": "Temperatur"
+    },
+    "major_version": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "minor_version": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "networkBaseType": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "networkSubType": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "pressure": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "product_version": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "up_cnt": {
+      "kind": "UNKNOWN",
+      "name": ""
+    }
+  },
+  "name": "Sentinum Febris",
+  "payload_codec_runtime": "JS",
+  "reg_params_revision": "B",
+  "region": "EU868",
+  "region_config_id": "eu868",
+  "relay_params": null,
+  "rx1_delay": 0,
+  "supported_uplink_data_rates": [],
+  "supports_class_b": false,
+  "supports_class_c": false,
+  "supports_otaa": true,
+  "tags": {},
+  "uplink_interval": 3600,
+  "vendor_profile_id": 0
+}

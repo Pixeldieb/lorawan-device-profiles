@@ -1,0 +1,118 @@
+{
+  "abp_params": null,
+  "adr_algorithm_id": "default",
+  "allow_roaming": false,
+  "app_layer_params": {},
+  "auto_detect_measurements": true,
+  "class_b_params": null,
+  "class_c_params": null,
+  "description": "Payload Decoder for S2105",
+  "device_status_req_interval": 1,
+  "firmware_version": "",
+  "flush_queue_on_activate": true,
+  "mac_version": "1.0.3",
+  "measurements": {
+    "err": {
+      "kind": "STRING",
+      "name": "Error"
+    },
+    "messages_0_channel": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "messages_0_measurementId": {
+      "kind": "STRING",
+      "name": "0 ID"
+    },
+    "messages_0_measurementValue": {
+      "kind": "GAUGE",
+      "name": "Bodenleitfähigkeit"
+    },
+    "messages_0_sensorId": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "messages_0_type": {
+      "kind": "STRING",
+      "name": "0 Type"
+    },
+    "messages_1_hardwareVersion": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "messages_1_measurementId": {
+      "kind": "STRING",
+      "name": "1 ID"
+    },
+    "messages_1_measurementValue": {
+      "kind": "GAUGE",
+      "name": "Bodentemperatur in *C"
+    },
+    "messages_1_softwareVersion": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "messages_1_type": {
+      "kind": "STRING",
+      "name": "1 ID"
+    },
+    "messages_2_battery": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "messages_2_measurementId": {
+      "kind": "STRING",
+      "name": "2 ID"
+    },
+    "messages_2_measurementValue": {
+      "kind": "GAUGE",
+      "name": "Bodenfeuchte in %"
+    },
+    "messages_2_type": {
+      "kind": "STRING",
+      "name": "2 Type"
+    },
+    "messages_3_battery": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "messages_3_interval": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "messages_3_type": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "messages_4_interval": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "messages_4_type": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "payload": {
+      "kind": "STRING",
+      "name": "Payload"
+    },
+    "valid": {
+      "kind": "STRING",
+      "name": "Valid"
+    }
+  },
+  "name": "SenseCAP S2105",
+  "payload_codec_runtime": "JS",
+  "reg_params_revision": "A",
+  "region": "EU868",
+  "region_config_id": null,
+  "relay_params": null,
+  "rx1_delay": 0,
+  "supported_uplink_data_rates": [],
+  "supports_class_b": false,
+  "supports_class_c": false,
+  "supports_otaa": true,
+  "tags": {},
+  "uplink_interval": 3600,
+  "vendor_profile_id": 0
+}

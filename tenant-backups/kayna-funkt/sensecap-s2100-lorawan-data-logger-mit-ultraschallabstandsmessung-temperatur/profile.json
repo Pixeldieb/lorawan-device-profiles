@@ -1,0 +1,122 @@
+{
+  "abp_params": null,
+  "adr_algorithm_id": "default",
+  "allow_roaming": false,
+  "app_layer_params": {},
+  "auto_detect_measurements": true,
+  "class_b_params": null,
+  "class_c_params": null,
+  "description": "SenseCAP S2100 LoRaWAN® Data Logger is an easy-to-deploy, industrial-grade LoRaWAN® sensor hub that can support 100+ industrial sensors including various sensor types such as 0~5V / 4~20mA / RS485.\n\nSource: https://github.com/TheThingsNetwork/lorawan-devices",
+  "device_status_req_interval": 1,
+  "firmware_version": "",
+  "flush_queue_on_activate": true,
+  "mac_version": "1.0.2",
+  "measurements": {
+    "err": {
+      "kind": "STRING",
+      "name": "Error"
+    },
+    "messages_0_0_Battery(%)": {
+      "kind": "GAUGE",
+      "name": "Batterie in %"
+    },
+    "messages_0_0_Firmware Version": {
+      "kind": "STRING",
+      "name": "Firmware Version"
+    },
+    "messages_0_0_Hardware Version": {
+      "kind": "STRING",
+      "name": "Hardware Version"
+    },
+    "messages_0_0_measureInterval": {
+      "kind": "STRING",
+      "name": "Messintervall"
+    },
+    "messages_0_0_measurementId": {
+      "kind": "STRING",
+      "name": "00 Measurement ID"
+    },
+    "messages_0_0_measurementValue": {
+      "kind": "GAUGE",
+      "name": "Distanz in mm"
+    },
+    "messages_0_0_thresholdMeasureInterval": {
+      "kind": "STRING",
+      "name": "Threshold Measure Interval"
+    },
+    "messages_0_0_type": {
+      "kind": "STRING",
+      "name": ""
+    },
+    "messages_0_1_measurementId": {
+      "kind": "STRING",
+      "name": "01 Measurement ID"
+    },
+    "messages_0_1_measurementValue": {
+      "kind": "GAUGE",
+      "name": "Temperatur in C"
+    },
+    "messages_0_1_type": {
+      "kind": "STRING",
+      "name": "messages_0_1_type"
+    },
+    "messages_1_0_Battery(%)": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "messages_1_0_Firmware Version": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "messages_1_0_Hardware Version": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "messages_1_0_dataloggerAnalogInterface": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "messages_1_0_dataloggerAnalogType": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "messages_1_0_dataloggerGPIOInput": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "messages_1_0_dataloggerProtocol": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "messages_1_0_measureInterval": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "messages_1_0_thresholdMeasureInterval": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "payload": {
+      "kind": "STRING",
+      "name": "Payload"
+    },
+    "valid": {
+      "kind": "STRING",
+      "name": "valid"
+    }
+  },
+  "name": "SenseCAP S2100 LoRaWAN® Data Logger mit Ultraschallabstandsmessung, Temperatur",
+  "payload_codec_runtime": "JS",
+  "reg_params_revision": "B",
+  "region": "EU868",
+  "region_config_id": null,
+  "relay_params": null,
+  "rx1_delay": 0,
+  "supported_uplink_data_rates": [],
+  "supports_class_b": false,
+  "supports_class_c": false,
+  "supports_otaa": true,
+  "tags": {},
+  "uplink_interval": 3600,
+  "vendor_profile_id": 0
+}

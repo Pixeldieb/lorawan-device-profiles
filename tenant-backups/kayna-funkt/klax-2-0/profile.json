@@ -1,0 +1,225 @@
+{
+  "abp_params": null,
+  "adr_algorithm_id": "default",
+  "allow_roaming": false,
+  "app_layer_params": {
+    "ts003_f_port": 202,
+    "ts003_version": null,
+    "ts004_f_port": 201,
+    "ts004_version": null,
+    "ts005_f_port": 200,
+    "ts005_version": null
+  },
+  "auto_detect_measurements": true,
+  "class_b_params": null,
+  "class_c_params": null,
+  "description": "",
+  "device_status_req_interval": 1,
+  "firmware_version": "",
+  "flush_queue_on_activate": true,
+  "mac_version": "1.0.3",
+  "measurements": {
+    "header_batteryPerc": {
+      "kind": "GAUGE",
+      "name": "header_batteryPerc"
+    },
+    "header_configured": {
+      "kind": "UNKNOWN",
+      "name": "header_configured"
+    },
+    "header_connTest": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "header_deviceType": {
+      "kind": "STRING",
+      "name": "header_deviceType"
+    },
+    "header_meterType": {
+      "kind": "STRING",
+      "name": "header_meterType"
+    },
+    "header_version": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "msgInfo_msgCnt": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "msgInfo_msgIdx": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "msgInfo_msgNum": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "payloads_0_id": {
+      "kind": "STRING",
+      "name": "payloads_0_id"
+    },
+    "payloads_0_register_filterActive": {
+      "kind": "STRING",
+      "name": "payloads_0_register_filterActive"
+    },
+    "payloads_0_register_filterId": {
+      "kind": "STRING",
+      "name": "payloads_0_register_filterId"
+    },
+    "payloads_0_register_unit": {
+      "kind": "STRING",
+      "name": "payloads_0_register_unit"
+    },
+    "payloads_0_register_values_0_valid": {
+      "kind": "STRING",
+      "name": "payloads_0_register_values_0_valid"
+    },
+    "payloads_0_register_values_0_value": {
+      "kind": "STRING",
+      "name": "payloads_0_register_values_0_value"
+    },
+    "payloads_0_register_values_1_valid": {
+      "kind": "STRING",
+      "name": "payloads_0_register_values_1_valid"
+    },
+    "payloads_0_register_values_1_value": {
+      "kind": "STRING",
+      "name": "payloads_0_register_values_1_value"
+    },
+    "payloads_0_register_values_2_valid": {
+      "kind": "STRING",
+      "name": "payloads_0_register_values_2_valid"
+    },
+    "payloads_0_register_values_2_value": {
+      "kind": "STRING",
+      "name": "payloads_0_register_values_2_value"
+    },
+    "payloads_0_register_values_3_valid": {
+      "kind": "STRING",
+      "name": "payloads_0_register_values_3_valid"
+    },
+    "payloads_0_register_values_3_value": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "payloads_0_type": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "payloads_1_register_filterActive": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "payloads_1_register_filterId": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "payloads_1_register_unit": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "payloads_1_register_values_0_valid": {
+      "kind": "STRING",
+      "name": "payloads_1_register_values_0_valid"
+    },
+    "payloads_1_register_values_0_value": {
+      "kind": "STRING",
+      "name": "payloads_1_register_values_0_value"
+    },
+    "payloads_1_register_values_1_valid": {
+      "kind": "STRING",
+      "name": "payloads_1_register_values_1_valid"
+    },
+    "payloads_1_register_values_1_value": {
+      "kind": "STRING",
+      "name": "payloads_1_register_values_1_value"
+    },
+    "payloads_1_register_values_2_valid": {
+      "kind": "STRING",
+      "name": "payloads_1_register_values_2_valid"
+    },
+    "payloads_1_register_values_2_value": {
+      "kind": "STRING",
+      "name": "payloads_1_register_values_2_value"
+    },
+    "payloads_1_register_values_3_valid": {
+      "kind": "STRING",
+      "name": "payloads_1_register_values_3_valid"
+    },
+    "payloads_1_register_values_3_value": {
+      "kind": "STRING",
+      "name": "payloads_1_register_values_3_value"
+    },
+    "payloads_1_type": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "payloads_2_register_filterActive": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "payloads_2_register_filterId": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "payloads_2_register_unit": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "payloads_2_register_values_0_valid": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "payloads_2_register_values_0_value": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "payloads_2_register_values_1_valid": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "payloads_2_register_values_1_value": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "payloads_2_register_values_2_valid": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "payloads_2_register_values_2_value": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "payloads_2_register_values_3_valid": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "payloads_2_register_values_3_value": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "payloads_2_type": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "type": {
+      "kind": "UNKNOWN",
+      "name": ""
+    }
+  },
+  "name": "Klax 2.0",
+  "payload_codec_runtime": "JS",
+  "reg_params_revision": "A",
+  "region": "EU868",
+  "region_config_id": null,
+  "relay_params": null,
+  "rx1_delay": 0,
+  "supported_uplink_data_rates": [],
+  "supports_class_b": false,
+  "supports_class_c": false,
+  "supports_otaa": true,
+  "tags": {},
+  "uplink_interval": 3600,
+  "vendor_profile_id": 0
+}

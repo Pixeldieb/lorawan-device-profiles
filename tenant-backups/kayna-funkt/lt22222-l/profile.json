@@ -1,0 +1,80 @@
+{
+  "abp_params": null,
+  "adr_algorithm_id": "default",
+  "allow_roaming": false,
+  "app_layer_params": {},
+  "auto_detect_measurements": true,
+  "class_b_params": null,
+  "class_c_params": {
+    "timeout": 60
+  },
+  "description": "The Dragino LT22222-L is a LoRaWAN® I/O module that contains different I/O Interfaces such as analog current input, analog voltage input, relay output, digital input, and digital output. The LT series I/O modules are designed to simplify the installation of I/O monitoring.\n\nSource: https://github.com/TheThingsNetwork/lorawan-devices",
+  "device_status_req_interval": 1,
+  "firmware_version": "",
+  "flush_queue_on_activate": true,
+  "mac_version": "1.0.3",
+  "measurements": {
+    "ACI1_mA": {
+      "kind": "GAUGE",
+      "name": "ACl1 mA"
+    },
+    "ACI2_mA": {
+      "kind": "GAUGE",
+      "name": "ACl2 mA"
+    },
+    "AVI1_V": {
+      "kind": "GAUGE",
+      "name": "AVl1 Volt"
+    },
+    "AVI2_V": {
+      "kind": "GAUGE",
+      "name": "AVl2 Volt"
+    },
+    "DI1_status": {
+      "kind": "STRING",
+      "name": "Dl1 Status"
+    },
+    "DI2_status": {
+      "kind": "STRING",
+      "name": "Dl2 Status"
+    },
+    "DO1_status": {
+      "kind": "STRING",
+      "name": "DO1 Status"
+    },
+    "DO2_status": {
+      "kind": "STRING",
+      "name": "DO2 Status"
+    },
+    "Hardware_mode": {
+      "kind": "STRING",
+      "name": "Hardware Modus"
+    },
+    "RO1_status": {
+      "kind": "STRING",
+      "name": "RO1 Status"
+    },
+    "RO2_status": {
+      "kind": "STRING",
+      "name": "RO2 Status"
+    },
+    "Work_mode": {
+      "kind": "STRING",
+      "name": "Arbeitsmodus"
+    }
+  },
+  "name": "LT22222-L",
+  "payload_codec_runtime": "JS",
+  "reg_params_revision": "A",
+  "region": "EU868",
+  "region_config_id": null,
+  "relay_params": null,
+  "rx1_delay": 0,
+  "supported_uplink_data_rates": [],
+  "supports_class_b": false,
+  "supports_class_c": true,
+  "supports_otaa": true,
+  "tags": {},
+  "uplink_interval": 3600,
+  "vendor_profile_id": 0
+}

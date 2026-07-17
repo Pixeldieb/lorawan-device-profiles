@@ -1,0 +1,449 @@
+{
+  "abp_params": null,
+  "adr_algorithm_id": "default",
+  "allow_roaming": false,
+  "app_layer_params": {
+    "ts003_f_port": 202,
+    "ts003_version": null,
+    "ts004_f_port": 201,
+    "ts004_version": null,
+    "ts005_f_port": 200,
+    "ts005_version": null
+  },
+  "auto_detect_measurements": true,
+  "class_b_params": null,
+  "class_c_params": null,
+  "description": "",
+  "device_status_req_interval": 1,
+  "firmware_version": "",
+  "flush_queue_on_activate": true,
+  "mac_version": "1.0.3",
+  "measurements": {
+    "err": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "errMessage": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "messages_0_0_measurementId": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "messages_0_0_measurementValue": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "messages_0_0_measurementValue_id": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "messages_0_0_measurementValue_statusName": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "messages_0_0_motionId": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "messages_0_0_timestamp": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "messages_0_0_type": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "messages_0_10_measurementId": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "messages_0_10_measurementValue": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "messages_0_10_type": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "messages_0_11_measurementId": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "messages_0_11_measurementValue": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "messages_0_11_type": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "messages_0_12_measurementId": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "messages_0_12_measurementValue": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "messages_0_12_type": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "messages_0_13_measurementId": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "messages_0_13_measurementValue": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "messages_0_13_type": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "messages_0_14_measurementId": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "messages_0_14_measurementValue": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "messages_0_14_type": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "messages_0_15_measurementId": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "messages_0_15_measurementValue": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "messages_0_15_type": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "messages_0_16_measurementId": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "messages_0_16_measurementValue": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "messages_0_16_type": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "messages_0_17_measurementId": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "messages_0_17_measurementValue": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "messages_0_17_type": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "messages_0_18_measurementId": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "messages_0_18_measurementValue": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "messages_0_18_type": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "messages_0_19_measurementId": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "messages_0_19_measurementValue": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "messages_0_19_type": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "messages_0_1_measurementId": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "messages_0_1_measurementValue": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "messages_0_1_motionId": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "messages_0_1_timestamp": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "messages_0_1_type": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "messages_0_20_measurementId": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "messages_0_20_measurementValue": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "messages_0_20_type": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "messages_0_2_measurementId": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "messages_0_2_measurementValue": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "messages_0_2_motionId": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "messages_0_2_timestamp": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "messages_0_2_type": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "messages_0_3_measurementId": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "messages_0_3_measurementValue": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "messages_0_3_motionId": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "messages_0_3_timestamp": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "messages_0_3_type": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "messages_0_4_measurementId": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "messages_0_4_measurementValue": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "messages_0_4_measurementValue_0_mac": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "messages_0_4_measurementValue_0_rssi": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "messages_0_4_measurementValue_1_mac": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "messages_0_4_measurementValue_1_rssi": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "messages_0_4_measurementValue_2_mac": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "messages_0_4_measurementValue_2_rssi": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "messages_0_4_measurementValue_3_mac": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "messages_0_4_measurementValue_3_rssi": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "messages_0_4_measurementValue_4_mac": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "messages_0_4_measurementValue_4_rssi": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "messages_0_4_motionId": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "messages_0_4_timestamp": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "messages_0_4_type": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "messages_0_5_measurementId": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "messages_0_5_measurementValue": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "messages_0_5_measurementValue_0_eventName": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "messages_0_5_measurementValue_0_id": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "messages_0_5_measurementValue_1_eventName": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "messages_0_5_measurementValue_1_id": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "messages_0_5_measurementValue_2_eventName": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "messages_0_5_measurementValue_2_id": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "messages_0_5_motionId": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "messages_0_5_timestamp": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "messages_0_5_type": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "messages_0_6_measurementId": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "messages_0_6_measurementValue": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "messages_0_6_measurementValue_0_eventName": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "messages_0_6_measurementValue_0_id": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "messages_0_6_measurementValue_1_eventName": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "messages_0_6_measurementValue_1_id": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "messages_0_6_motionId": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "messages_0_6_timestamp": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "messages_0_6_type": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "messages_0_7_measurementId": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "messages_0_7_measurementValue": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "messages_0_7_type": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "messages_0_8_measurementId": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "messages_0_8_measurementValue": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "messages_0_8_type": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "messages_0_9_measurementId": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "messages_0_9_measurementValue": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "messages_0_9_type": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "payload": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "valid": {
+      "kind": "UNKNOWN",
+      "name": ""
+    }
+  },
+  "name": "SenseCAP T2000-C",
+  "payload_codec_runtime": "JS",
+  "reg_params_revision": "A",
+  "region": "EU868",
+  "region_config_id": null,
+  "relay_params": null,
+  "rx1_delay": 0,
+  "supported_uplink_data_rates": [],
+  "supports_class_b": false,
+  "supports_class_c": false,
+  "supports_otaa": true,
+  "tags": {},
+  "uplink_interval": 3600,
+  "vendor_profile_id": 0
+}

@@ -1,0 +1,74 @@
+// This file contains the uplink and downlink for ttn
+
+// Uplink
+function decodeUplink(input) {
+    //var Num = input.bytes[0] * 256 + input.bytes[1]
+    var Bat = input.bytes[2] / 10.0 //V
+    
+    var Soil_temp = (input.bytes[3] * 256 + input.bytes[4])
+    
+    if (Soil_temp >= 0x8000) {
+    Soil_temp -= 0x10000;
+    }
+    Soil_temp= Soil_temp/100 //°C
+
+    var Soil_RH = input.bytes[5] * 256 + input.bytes[6] //ADC value
+
+    // 1270 corresponds to the ADC value in air, and 815 corresponds to the ADC value in water. 
+    // Based on this, the ADC can be converted into a percentage. 
+    // Since water quality varies from place to place, customers need to modify these values themselves.
+    var Soil_RH_Percentage=(1270-Soil_RH)*100/(1270-815) //%
+
+    var Soil_EC = (input.bytes[7] * 16777216 + input.bytes[8] * 65536 + input.bytes[9] * 256 + input.bytes[10]) / 100.0 //µS/cm
+    var Air_temp = (input.bytes[11] * 256 + input.bytes[12])
+    
+    if (Air_temp >= 0x8000) {
+    Air_temp -= 0x10000;
+    }
+    Air_temp = Air_temp / 10.0 //°C
+
+    var Air_humi = (input.bytes[13] * 256 + input.bytes[14]) / 10.0 //%
+    var interval = (input.bytes[15] * 16777216 + input.bytes[16] * 65536 + input.bytes[17] * 256 + input.bytes[18]) / 1000.0 //S
+
+    return {
+        data: {
+            //field1: Num,
+            field1: Bat,
+            field2: Soil_temp,
+            //field3: Soil_RH,
+            field3: Soil_RH_Percentage,
+            field4: Soil_EC,
+            field5: Air_temp,
+            field6: Air_humi,
+            field7: interval,
+        },
+  };
+}
+
+// .................................................................................................
+// .................................................................................................
+// .................................................................................................
+// Downlink.........................................................................................
+// .................................................................................................
+// .................................................................................................
+// .................................................................................................
+// Encoder function to be used in the TTN console for downlink payload
+
+// fPort 1   modification interval
+// Encoder function for port 1
+function encodeDownlink(input) {
+  var minutes = Number((input.data || {}).minutes);
+  if (!isFinite(minutes)) return { errors: ["missing/invalid minutes"] };
+
+  var seconds = Math.round(minutes * 60);
+  if (seconds < 300) seconds = 300;
+
+  var bytes = [
+    (seconds >> 24) & 0xFF,
+    (seconds >> 16) & 0xFF,
+    (seconds >> 8) & 0xFF,
+    seconds & 0xFF
+  ];
+
+  return { fPort: 1, bytes: bytes };
+}

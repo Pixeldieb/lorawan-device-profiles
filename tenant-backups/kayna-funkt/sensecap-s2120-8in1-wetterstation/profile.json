@@ -1,0 +1,309 @@
+{
+  "abp_params": null,
+  "adr_algorithm_id": "default",
+  "allow_roaming": false,
+  "app_layer_params": {
+    "ts003_f_port": 202,
+    "ts003_version": null,
+    "ts004_f_port": 201,
+    "ts004_version": null,
+    "ts005_f_port": 200,
+    "ts005_version": null
+  },
+  "auto_detect_measurements": true,
+  "class_b_params": null,
+  "class_c_params": null,
+  "description": "",
+  "device_status_req_interval": 1,
+  "firmware_version": "",
+  "flush_queue_on_activate": true,
+  "mac_version": "1.0.4",
+  "measurements": {
+    "air_humidity_percent": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "air_temperature_c": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "cumulative_rainfall_mm": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "decoder_valid": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "err": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "f_port": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "frame_identifiers": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "light_intensity_lux": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "messages_0_0_Battery(%)": {
+      "kind": "GAUGE",
+      "name": "Battery level (%)"
+    },
+    "messages_0_0_Firmware Version": {
+      "kind": "STRING",
+      "name": "Firmware version"
+    },
+    "messages_0_0_Hardware Version": {
+      "kind": "STRING",
+      "name": "Hardware version"
+    },
+    "messages_0_0_gpsInterval": {
+      "kind": "STRING",
+      "name": ""
+    },
+    "messages_0_0_measureInterval": {
+      "kind": "STRING",
+      "name": ""
+    },
+    "messages_0_0_measurementId": {
+      "kind": "STRING",
+      "name": ""
+    },
+    "messages_0_0_measurementValue": {
+      "kind": "STRING",
+      "name": ""
+    },
+    "messages_0_0_type": {
+      "kind": "STRING",
+      "name": ""
+    },
+    "messages_0_1_measurementId": {
+      "kind": "STRING",
+      "name": ""
+    },
+    "messages_0_1_measurementValue": {
+      "kind": "STRING",
+      "name": ""
+    },
+    "messages_0_1_type": {
+      "kind": "STRING",
+      "name": ""
+    },
+    "messages_0_2_measurementId": {
+      "kind": "STRING",
+      "name": ""
+    },
+    "messages_0_2_measurementValue": {
+      "kind": "STRING",
+      "name": ""
+    },
+    "messages_0_2_type": {
+      "kind": "STRING",
+      "name": ""
+    },
+    "messages_0_3_measurementId": {
+      "kind": "STRING",
+      "name": ""
+    },
+    "messages_0_3_measurementValue": {
+      "kind": "STRING",
+      "name": ""
+    },
+    "messages_0_3_type": {
+      "kind": "STRING",
+      "name": ""
+    },
+    "messages_0_4_measurementId": {
+      "kind": "STRING",
+      "name": ""
+    },
+    "messages_0_4_measurementValue": {
+      "kind": "STRING",
+      "name": ""
+    },
+    "messages_0_4_type": {
+      "kind": "STRING",
+      "name": ""
+    },
+    "messages_1_0_descZh": {
+      "kind": "STRING",
+      "name": ""
+    },
+    "messages_1_0_errCode": {
+      "kind": "STRING",
+      "name": ""
+    },
+    "messages_1_0_measurementId": {
+      "kind": "STRING",
+      "name": "Air temperature (°C)"
+    },
+    "messages_1_0_measurementValue": {
+      "kind": "GAUGE",
+      "name": "Air temperature (°C)"
+    },
+    "messages_1_0_type": {
+      "kind": "STRING",
+      "name": ""
+    },
+    "messages_1_1_measurementId": {
+      "kind": "STRING",
+      "name": "Air humidity (%)"
+    },
+    "messages_1_1_measurementValue": {
+      "kind": "GAUGE",
+      "name": "Air humidity (%)"
+    },
+    "messages_1_1_type": {
+      "kind": "STRING",
+      "name": ""
+    },
+    "messages_1_2_measurementId": {
+      "kind": "STRING",
+      "name": "Light intensity (lx)"
+    },
+    "messages_1_2_measurementValue": {
+      "kind": "GAUGE",
+      "name": "Light intensity (lx)"
+    },
+    "messages_1_2_type": {
+      "kind": "STRING",
+      "name": ""
+    },
+    "messages_1_3_measurementId": {
+      "kind": "STRING",
+      "name": "UV index"
+    },
+    "messages_1_3_measurementValue": {
+      "kind": "GAUGE",
+      "name": "UV index"
+    },
+    "messages_1_3_type": {
+      "kind": "STRING",
+      "name": ""
+    },
+    "messages_1_4_measurementId": {
+      "kind": "STRING",
+      "name": "Wind speed (m/s)"
+    },
+    "messages_1_4_measurementValue": {
+      "kind": "GAUGE",
+      "name": "Wind speed (m/s)"
+    },
+    "messages_1_4_type": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "messages_2_0_descZh": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "messages_2_0_errCode": {
+      "kind": "STRING",
+      "name": ""
+    },
+    "messages_2_0_measurementId": {
+      "kind": "STRING",
+      "name": ""
+    },
+    "messages_2_0_measurementValue": {
+      "kind": "STRING",
+      "name": ""
+    },
+    "messages_2_0_type": {
+      "kind": "STRING",
+      "name": ""
+    },
+    "messages_2_1_measurementId": {
+      "kind": "STRING",
+      "name": ""
+    },
+    "messages_2_1_measurementValue": {
+      "kind": "STRING",
+      "name": ""
+    },
+    "messages_2_1_type": {
+      "kind": "STRING",
+      "name": ""
+    },
+    "messages_3_0_measurementId": {
+      "kind": "STRING",
+      "name": "Peak wind gust (m/s)"
+    },
+    "messages_3_0_measurementValue": {
+      "kind": "GAUGE",
+      "name": "Peak wind gust (m/s)"
+    },
+    "messages_3_0_type": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "messages_3_1_measurementId": {
+      "kind": "STRING",
+      "name": "Rain accumulation (mm)"
+    },
+    "messages_3_1_measurementValue": {
+      "kind": "GAUGE",
+      "name": "Rain accumulation (mm)"
+    },
+    "messages_3_1_type": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "payload": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "payload_hex": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "peak_wind_gust_m_s": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "sensor_data_valid": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "sensor_error": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "sensor_error_code": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "uv_index": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "valid": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "wind_speed_m_s": {
+      "kind": "UNKNOWN",
+      "name": ""
+    }
+  },
+  "name": "SenseCAP S2120 8in1 Wetterstation",
+  "payload_codec_runtime": "JS",
+  "reg_params_revision": "A",
+  "region": "EU868",
+  "region_config_id": null,
+  "relay_params": null,
+  "rx1_delay": 0,
+  "supported_uplink_data_rates": [],
+  "supports_class_b": false,
+  "supports_class_c": false,
+  "supports_otaa": true,
+  "tags": {},
+  "uplink_interval": 3600,
+  "vendor_profile_id": 0
+}

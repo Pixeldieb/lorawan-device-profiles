@@ -1,0 +1,78 @@
+{
+  "abp_params": null,
+  "adr_algorithm_id": "default",
+  "allow_roaming": false,
+  "app_layer_params": {},
+  "auto_detect_measurements": true,
+  "class_b_params": null,
+  "class_c_params": null,
+  "description": "",
+  "device_status_req_interval": 1,
+  "firmware_version": "",
+  "flush_queue_on_activate": true,
+  "mac_version": "1.0.3",
+  "measurements": {
+    "err": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "messages_0_0_Battery(%)": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "messages_0_0_Firmware Version": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "messages_0_0_Hardware Version": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "messages_0_0_measureInterval": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "messages_0_0_thresholdMeasureInterval": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "messages_1_0_dataloggerAnalogInterface": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "messages_1_0_dataloggerAnalogType": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "messages_1_0_dataloggerGPIOInput": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "messages_1_0_dataloggerProtocol": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "payload": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "valid": {
+      "kind": "UNKNOWN",
+      "name": ""
+    }
+  },
+  "name": "SenseCAP S2100 LoRaWAN Data Logger für Analog/I2C/UART/RS485",
+  "payload_codec_runtime": "JS",
+  "reg_params_revision": "A",
+  "region": "EU868",
+  "region_config_id": null,
+  "relay_params": null,
+  "rx1_delay": 0,
+  "supported_uplink_data_rates": [],
+  "supports_class_b": false,
+  "supports_class_c": false,
+  "supports_otaa": true,
+  "tags": {},
+  "uplink_interval": 3600,
+  "vendor_profile_id": 0
+}

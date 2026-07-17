@@ -1,0 +1,229 @@
+{
+  "abp_params": null,
+  "adr_algorithm_id": "default",
+  "allow_roaming": false,
+  "app_layer_params": {
+    "ts003_f_port": 202,
+    "ts003_version": null,
+    "ts004_f_port": 201,
+    "ts004_version": null,
+    "ts005_f_port": 200,
+    "ts005_version": null
+  },
+  "auto_detect_measurements": true,
+  "class_b_params": null,
+  "class_c_params": null,
+  "description": "The MClimate Vicki is a smart radiator thermostat valve that contains a temperature and humidity sensor allowing for temperature control and monitoring temperature and humidity from distance through a LoRaWAN® network. Manual target temperature selection is possible by rotating the outer ring of the device. The target temperature is displayed on the device.\n\nSource: https://github.com/TheThingsNetwork/lorawan-devices",
+  "device_status_req_interval": 1,
+  "firmware_version": "",
+  "flush_queue_on_activate": true,
+  "mac_version": "1.0.3",
+  "measurements": {
+    "antiFreezeProtection": {
+      "kind": "STRING",
+      "name": "antiFreezeProtection"
+    },
+    "attachedBackplate": {
+      "kind": "STRING",
+      "name": "attachedBackplate"
+    },
+    "autoSetpointRestoreStatus": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "batteryVoltage": {
+      "kind": "GAUGE",
+      "name": "batteryVoltage"
+    },
+    "brokenSensor": {
+      "kind": "STRING",
+      "name": "brokenSensor"
+    },
+    "calibrationFailed": {
+      "kind": "STRING",
+      "name": "calibrationFailed"
+    },
+    "childLock": {
+      "kind": "STRING",
+      "name": "childLock"
+    },
+    "deviceTime": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "deviceTimeZone": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "deviceVersions_hardware": {
+      "kind": "STRING",
+      "name": "deviceVersions_hardware"
+    },
+    "deviceVersions_software": {
+      "kind": "STRING",
+      "name": "deviceVersions_software"
+    },
+    "effectiveMotorRange_maxValveOpenness": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "effectiveMotorRange_minValveOpenness": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "fuota_fuota_address": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "fuota_fuota_address_raw": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "highMotorConsumption": {
+      "kind": "STRING",
+      "name": "highMotorConsumption"
+    },
+    "integralGain": {
+      "kind": "STRING",
+      "name": "integralGain"
+    },
+    "joinRetryPeriod": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "keepAliveTime": {
+      "kind": "GAUGE",
+      "name": "keepAliveTime"
+    },
+    "lowMotorConsumption": {
+      "kind": "STRING",
+      "name": "lowMotorConsumption"
+    },
+    "manualTargetTemperatureUpdate": {
+      "kind": "UNKNOWN",
+      "name": "manualTargetTemperatureUpdate"
+    },
+    "motorOpenness": {
+      "kind": "STRING",
+      "name": "motorOpenness"
+    },
+    "motorPosition": {
+      "kind": "STRING",
+      "name": "motorPosition"
+    },
+    "motorRange": {
+      "kind": "STRING",
+      "name": "motorRange"
+    },
+    "offlineTargetTemperature": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "openWindow": {
+      "kind": "STRING",
+      "name": "openWindow"
+    },
+    "openWindowParams_delta": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "openWindowParams_duration": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "openWindowParams_enabled": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "openWindowParams_motorPosition": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "operationalMode": {
+      "kind": "STRING",
+      "name": "operationalMode"
+    },
+    "perceiveAsOnline": {
+      "kind": "STRING",
+      "name": "perceiveAsOnline"
+    },
+    "piRunPeriod": {
+      "kind": "STRING",
+      "name": "piRunPeriod"
+    },
+    "primaryOperationalMode": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "proportionalGain": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "reason": {
+      "kind": "STRING",
+      "name": "reason"
+    },
+    "relativeHumidity": {
+      "kind": "GAUGE",
+      "name": "relativeHumidity"
+    },
+    "sensorTemperature": {
+      "kind": "GAUGE",
+      "name": "sensorTemperature"
+    },
+    "targetTemperature": {
+      "kind": "GAUGE",
+      "name": "targetTemperature"
+    },
+    "targetTemperatureFloat": {
+      "kind": "GAUGE",
+      "name": "targetTemperatureFloat"
+    },
+    "tempHysteresis": {
+      "kind": "STRING",
+      "name": "tempHysteresis"
+    },
+    "temperatureOffset": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "temperatureRangeSettings_max": {
+      "kind": "GAUGE",
+      "name": "temperatureRangeSettings_max"
+    },
+    "temperatureRangeSettings_min": {
+      "kind": "GAUGE",
+      "name": "temperatureRangeSettings_min"
+    },
+    "uplinkType": {
+      "kind": "STRING",
+      "name": "uplinkType"
+    },
+    "valveOpenness": {
+      "kind": "STRING",
+      "name": "valveOpenness"
+    },
+    "watchDogParams_wdpC": {
+      "kind": "STRING",
+      "name": "watchDogParams_wdpC"
+    },
+    "watchDogParams_wdpUc": {
+      "kind": "STRING",
+      "name": "watchDogParams_wdpUc"
+    }
+  },
+  "name": "MClimate Vicki - Smart Radiator Thermostat",
+  "payload_codec_runtime": "JS",
+  "reg_params_revision": "A",
+  "region": "EU868",
+  "region_config_id": null,
+  "relay_params": null,
+  "rx1_delay": 0,
+  "supported_uplink_data_rates": [],
+  "supports_class_b": false,
+  "supports_class_c": false,
+  "supports_otaa": true,
+  "tags": {},
+  "uplink_interval": 3600,
+  "vendor_profile_id": 0
+}

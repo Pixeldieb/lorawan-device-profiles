@@ -1,0 +1,54 @@
+{
+  "abp_params": null,
+  "adr_algorithm_id": "default",
+  "allow_roaming": false,
+  "app_layer_params": {},
+  "auto_detect_measurements": true,
+  "class_b_params": null,
+  "class_c_params": null,
+  "description": "Tür- und Fensteröffnungssensor",
+  "device_status_req_interval": 1,
+  "firmware_version": "",
+  "flush_queue_on_activate": true,
+  "mac_version": "1.0.3",
+  "measurements": {
+    "ALARM": {
+      "kind": "STRING",
+      "name": "Alarm"
+    },
+    "BAT_V": {
+      "kind": "GAUGE",
+      "name": "Batterie in Volt"
+    },
+    "DOOR_OPEN_STATUS": {
+      "kind": "STRING",
+      "name": "Status Tür"
+    },
+    "DOOR_OPEN_TIMES": {
+      "kind": "STRING",
+      "name": "Anzahl Türöffnungen"
+    },
+    "LAST_DOOR_OPEN_DURATION": {
+      "kind": "GAUGE",
+      "name": "Länge Türöffnung"
+    },
+    "MOD": {
+      "kind": "STRING",
+      "name": "Modus"
+    }
+  },
+  "name": "Dragino LDS02 ",
+  "payload_codec_runtime": "JS",
+  "reg_params_revision": "A",
+  "region": "EU868",
+  "region_config_id": null,
+  "relay_params": null,
+  "rx1_delay": 0,
+  "supported_uplink_data_rates": [],
+  "supports_class_b": false,
+  "supports_class_c": false,
+  "supports_otaa": true,
+  "tags": {},
+  "uplink_interval": 3600,
+  "vendor_profile_id": 0
+}
