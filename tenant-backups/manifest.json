@@ -1,6 +1,228 @@
 [
   {
     "codec": "codec.js",
+    "name": "DEOS Co2 Raumluftampel 2020",
+    "path": "kayna-funkt/deos-co2-raumluftampel-2020",
+    "tenant": "Kayna-Funkt"
+  },
+  {
+    "codec": "codec.js",
+    "name": "Dragino D23-LB",
+    "path": "kayna-funkt/dragino-d23-lb",
+    "tenant": "Kayna-Funkt"
+  },
+  {
+    "codec": "codec.js",
+    "name": "Dragino LDS02 ",
+    "path": "kayna-funkt/dragino-lds02",
+    "tenant": "Kayna-Funkt"
+  },
+  {
+    "codec": "codec.js",
+    "name": "Dragino LGT-92 LoRaWAN Tracker D",
+    "path": "kayna-funkt/dragino-lgt-92-lorawan-tracker-d",
+    "tenant": "Kayna-Funkt"
+  },
+  {
+    "codec": "codec.js",
+    "name": "Dragino LHT65",
+    "path": "kayna-funkt/dragino-lht65",
+    "tenant": "Kayna-Funkt"
+  },
+  {
+    "codec": "codec.js",
+    "name": "Dragino LHT65S-PIR",
+    "path": "kayna-funkt/dragino-lht65s-pir",
+    "tenant": "Kayna-Funkt"
+  },
+  {
+    "codec": "codec.js",
+    "name": "EM300-MCS",
+    "path": "kayna-funkt/em300-mcs",
+    "tenant": "Kayna-Funkt"
+  },
+  {
+    "codec": "codec.js",
+    "name": "EM300-TH",
+    "path": "kayna-funkt/em300-th",
+    "tenant": "Kayna-Funkt"
+  },
+  {
+    "codec": null,
+    "name": "FTD Network Tester",
+    "path": "kayna-funkt/ftd-network-tester",
+    "tenant": "Kayna-Funkt"
+  },
+  {
+    "codec": "codec.js",
+    "name": "Klax 2.0",
+    "path": "kayna-funkt/klax-2-0",
+    "tenant": "Kayna-Funkt"
+  },
+  {
+    "codec": "codec.js",
+    "name": "LT22222-L",
+    "path": "kayna-funkt/lt22222-l",
+    "tenant": "Kayna-Funkt"
+  },
+  {
+    "codec": "codec.js",
+    "name": "MClimate Vicki - Smart Radiator Thermostat",
+    "path": "kayna-funkt/mclimate-vicki-smart-radiator-thermostat",
+    "tenant": "Kayna-Funkt"
+  },
+  {
+    "codec": "codec.js",
+    "name": "Makerfabs Agrosense LoRaWAN Temperature & Humidity",
+    "path": "kayna-funkt/makerfabs-agrosense-lorawan-temperature-humidity",
+    "tenant": "Kayna-Funkt"
+  },
+  {
+    "codec": "codec.js",
+    "name": "Milesight EM320-TH",
+    "path": "kayna-funkt/milesight-em320-th",
+    "tenant": "Kayna-Funkt"
+  },
+  {
+    "codec": "codec.js",
+    "name": "Milesight VS121 AI Workplace Sensor",
+    "path": "kayna-funkt/milesight-vs121-ai-workplace-sensor",
+    "tenant": "Kayna-Funkt"
+  },
+  {
+    "codec": "codec.js",
+    "name": "Milesight VS351 Mini Thermopile Counter",
+    "path": "kayna-funkt/milesight-vs351-mini-thermopile-counter",
+    "tenant": "Kayna-Funkt"
+  },
+  {
+    "codec": "codec.js",
+    "name": "Milesight WS2021",
+    "path": "kayna-funkt/milesight-ws2021",
+    "tenant": "Kayna-Funkt"
+  },
+  {
+    "codec": "codec.js",
+    "name": "Miromico Miro Click Smart Button",
+    "path": "kayna-funkt/miromico-miro-click-smart-button",
+    "tenant": "Kayna-Funkt"
+  },
+  {
+    "codec": "codec.js",
+    "name": "Moko Smart LW004 PB Panikbuton",
+    "path": "kayna-funkt/moko-smart-lw004-pb-panikbuton",
+    "tenant": "Kayna-Funkt"
+  },
+  {
+    "codec": "codec.js",
+    "name": "Pepperl und Fuchs Wilsen WS-UCC2500-F406-B41-01-02 ",
+    "path": "kayna-funkt/pepperl-und-fuchs-wilsen-ws-ucc2500-f406-b41-01-02",
+    "tenant": "Kayna-Funkt"
+  },
+  {
+    "codec": "codec.js",
+    "name": "Qingping CO2 & Temp & RH Monitor",
+    "path": "kayna-funkt/qingping-co2-temp-rh-monitor",
+    "tenant": "Kayna-Funkt"
+  },
+  {
+    "codec": "codec.js",
+    "name": "Rejeee SL103",
+    "path": "kayna-funkt/rejeee-sl103",
+    "tenant": "Kayna-Funkt"
+  },
+  {
+    "codec": "codec.js",
+    "name": "SenseCAP S2100 LoRaWAN® Data Logger mit Ultraschallabstandsmessung, Temperatur",
+    "path": "kayna-funkt/sensecap-s2100-lorawan-data-logger-mit-ultraschallabstandsmessung-temperatur",
+    "tenant": "Kayna-Funkt"
+  },
+  {
+    "codec": "codec.js",
+    "name": "SenseCAP S2100 V700-A Wetterstation",
+    "path": "kayna-funkt/sensecap-s2100-v700-a-wetterstation",
+    "tenant": "Kayna-Funkt"
+  },
+  {
+    "codec": "codec.js",
+    "name": "SenseCAP S2103 rHum & Temp & CO2",
+    "path": "kayna-funkt/sensecap-s2103-rhum-temp-co2",
+    "tenant": "Kayna-Funkt"
+  },
+  {
+    "codec": "codec.js",
+    "name": "SenseCAP S2104 Soil Moisture",
+    "path": "kayna-funkt/sensecap-s2104-soil-moisture",
+    "tenant": "Kayna-Funkt"
+  },
+  {
+    "codec": "codec.js",
+    "name": "SenseCAP S2105",
+    "path": "kayna-funkt/sensecap-s2105",
+    "tenant": "Kayna-Funkt"
+  },
+  {
+    "codec": "codec.js",
+    "name": "SenseCAP S2120 8in1 Wetterstation",
+    "path": "kayna-funkt/sensecap-s2120-8in1-wetterstation",
+    "tenant": "Kayna-Funkt"
+  },
+  {
+    "codec": "codec.js",
+    "name": "SenseCAP T1000-A",
+    "path": "kayna-funkt/sensecap-t1000-a",
+    "tenant": "Kayna-Funkt"
+  },
+  {
+    "codec": "codec.js",
+    "name": "SenseCAP T1000-B",
+    "path": "kayna-funkt/sensecap-t1000-b",
+    "tenant": "Kayna-Funkt"
+  },
+  {
+    "codec": "codec.js",
+    "name": "SenseCAP T2000-C",
+    "path": "kayna-funkt/sensecap-t2000-c",
+    "tenant": "Kayna-Funkt"
+  },
+  {
+    "codec": "codec.js",
+    "name": "Sentinum Febris",
+    "path": "kayna-funkt/sentinum-febris",
+    "tenant": "Kayna-Funkt"
+  },
+  {
+    "codec": "codec.js",
+    "name": "Siterwell GS816A CO Sensor mit Alarm SWL-GS816A",
+    "path": "kayna-funkt/siterwell-gs816a-co-sensor-mit-alarm-swl-gs816a",
+    "tenant": "Kayna-Funkt"
+  },
+  {
+    "codec": "codec.js",
+    "name": "Thermokon MCS LRW",
+    "path": "kayna-funkt/thermokon-mcs-lrw",
+    "tenant": "Kayna-Funkt"
+  },
+  {
+    "codec": "codec.js",
+    "name": "dnt LW-eTRV",
+    "path": "kayna-funkt/dnt-lw-etrv",
+    "tenant": "Kayna-Funkt"
+  },
+  {
+    "codec": "codec.js",
+    "name": "dnt LW-eTRV-C",
+    "path": "kayna-funkt/dnt-lw-etrv-c",
+    "tenant": "Kayna-Funkt"
+  },
+  {
+    "codec": "codec.js",
+    "name": "dnt-LW-eTRV",
+    "path": "kayna-funkt/dnt-lw-etrv",
+    "tenant": "Kayna-Funkt"
+  },
+  {
+    "codec": "codec.js",
     "name": "AgroSense_Soil & Air EC-TH Pro LoRaWAN",
     "path": "testinstanz/agrosense-soil-air-ec-th-pro-lorawan",
     "tenant": "Testinstanz"
@@ -112,227 +334,5 @@
     "name": "arch-Co-Host-Profile",
     "path": "testinstanz/arch-co-host-profile",
     "tenant": "Testinstanz"
-  },
-  {
-    "codec": "codec.js",
-    "name": "DEOS Co2 Raumluftampel 2020",
-    "path": "kayna-funkt/deos-co2-raumluftampel-2020",
-    "tenant": "kayna-funkt"
-  },
-  {
-    "codec": "codec.js",
-    "name": "Dragino D23-LB",
-    "path": "kayna-funkt/dragino-d23-lb",
-    "tenant": "kayna-funkt"
-  },
-  {
-    "codec": "codec.js",
-    "name": "Dragino LDS02 ",
-    "path": "kayna-funkt/dragino-lds02",
-    "tenant": "kayna-funkt"
-  },
-  {
-    "codec": "codec.js",
-    "name": "Dragino LGT-92 LoRaWAN Tracker D",
-    "path": "kayna-funkt/dragino-lgt-92-lorawan-tracker-d",
-    "tenant": "kayna-funkt"
-  },
-  {
-    "codec": "codec.js",
-    "name": "Dragino LHT65",
-    "path": "kayna-funkt/dragino-lht65",
-    "tenant": "kayna-funkt"
-  },
-  {
-    "codec": "codec.js",
-    "name": "Dragino LHT65S-PIR",
-    "path": "kayna-funkt/dragino-lht65s-pir",
-    "tenant": "kayna-funkt"
-  },
-  {
-    "codec": "codec.js",
-    "name": "EM300-MCS",
-    "path": "kayna-funkt/em300-mcs",
-    "tenant": "kayna-funkt"
-  },
-  {
-    "codec": "codec.js",
-    "name": "EM300-TH",
-    "path": "kayna-funkt/em300-th",
-    "tenant": "kayna-funkt"
-  },
-  {
-    "codec": null,
-    "name": "FTD Network Tester",
-    "path": "kayna-funkt/ftd-network-tester",
-    "tenant": "kayna-funkt"
-  },
-  {
-    "codec": "codec.js",
-    "name": "Klax 2.0",
-    "path": "kayna-funkt/klax-2-0",
-    "tenant": "kayna-funkt"
-  },
-  {
-    "codec": "codec.js",
-    "name": "LT22222-L",
-    "path": "kayna-funkt/lt22222-l",
-    "tenant": "kayna-funkt"
-  },
-  {
-    "codec": "codec.js",
-    "name": "MClimate Vicki - Smart Radiator Thermostat",
-    "path": "kayna-funkt/mclimate-vicki-smart-radiator-thermostat",
-    "tenant": "kayna-funkt"
-  },
-  {
-    "codec": "codec.js",
-    "name": "Makerfabs Agrosense LoRaWAN Temperature & Humidity",
-    "path": "kayna-funkt/makerfabs-agrosense-lorawan-temperature-humidity",
-    "tenant": "kayna-funkt"
-  },
-  {
-    "codec": "codec.js",
-    "name": "Milesight EM320-TH",
-    "path": "kayna-funkt/milesight-em320-th",
-    "tenant": "kayna-funkt"
-  },
-  {
-    "codec": "codec.js",
-    "name": "Milesight VS121 AI Workplace Sensor",
-    "path": "kayna-funkt/milesight-vs121-ai-workplace-sensor",
-    "tenant": "kayna-funkt"
-  },
-  {
-    "codec": "codec.js",
-    "name": "Milesight VS351 Mini Thermopile Counter",
-    "path": "kayna-funkt/milesight-vs351-mini-thermopile-counter",
-    "tenant": "kayna-funkt"
-  },
-  {
-    "codec": "codec.js",
-    "name": "Milesight WS2021",
-    "path": "kayna-funkt/milesight-ws2021",
-    "tenant": "kayna-funkt"
-  },
-  {
-    "codec": "codec.js",
-    "name": "Miromico Miro Click Smart Button",
-    "path": "kayna-funkt/miromico-miro-click-smart-button",
-    "tenant": "kayna-funkt"
-  },
-  {
-    "codec": "codec.js",
-    "name": "Moko Smart LW004 PB Panikbuton",
-    "path": "kayna-funkt/moko-smart-lw004-pb-panikbuton",
-    "tenant": "kayna-funkt"
-  },
-  {
-    "codec": "codec.js",
-    "name": "Pepperl und Fuchs Wilsen WS-UCC2500-F406-B41-01-02 ",
-    "path": "kayna-funkt/pepperl-und-fuchs-wilsen-ws-ucc2500-f406-b41-01-02",
-    "tenant": "kayna-funkt"
-  },
-  {
-    "codec": "codec.js",
-    "name": "Qingping CO2 & Temp & RH Monitor",
-    "path": "kayna-funkt/qingping-co2-temp-rh-monitor",
-    "tenant": "kayna-funkt"
-  },
-  {
-    "codec": "codec.js",
-    "name": "Rejeee SL103",
-    "path": "kayna-funkt/rejeee-sl103",
-    "tenant": "kayna-funkt"
-  },
-  {
-    "codec": "codec.js",
-    "name": "SenseCAP S2100 LoRaWAN® Data Logger mit Ultraschallabstandsmessung, Temperatur",
-    "path": "kayna-funkt/sensecap-s2100-lorawan-data-logger-mit-ultraschallabstandsmessung-temperatur",
-    "tenant": "kayna-funkt"
-  },
-  {
-    "codec": "codec.js",
-    "name": "SenseCAP S2100 V700-A Wetterstation",
-    "path": "kayna-funkt/sensecap-s2100-v700-a-wetterstation",
-    "tenant": "kayna-funkt"
-  },
-  {
-    "codec": "codec.js",
-    "name": "SenseCAP S2103 rHum & Temp & CO2",
-    "path": "kayna-funkt/sensecap-s2103-rhum-temp-co2",
-    "tenant": "kayna-funkt"
-  },
-  {
-    "codec": "codec.js",
-    "name": "SenseCAP S2104 Soil Moisture",
-    "path": "kayna-funkt/sensecap-s2104-soil-moisture",
-    "tenant": "kayna-funkt"
-  },
-  {
-    "codec": "codec.js",
-    "name": "SenseCAP S2105",
-    "path": "kayna-funkt/sensecap-s2105",
-    "tenant": "kayna-funkt"
-  },
-  {
-    "codec": "codec.js",
-    "name": "SenseCAP S2120 8in1 Wetterstation",
-    "path": "kayna-funkt/sensecap-s2120-8in1-wetterstation",
-    "tenant": "kayna-funkt"
-  },
-  {
-    "codec": "codec.js",
-    "name": "SenseCAP T1000-A",
-    "path": "kayna-funkt/sensecap-t1000-a",
-    "tenant": "kayna-funkt"
-  },
-  {
-    "codec": "codec.js",
-    "name": "SenseCAP T1000-B",
-    "path": "kayna-funkt/sensecap-t1000-b",
-    "tenant": "kayna-funkt"
-  },
-  {
-    "codec": "codec.js",
-    "name": "SenseCAP T2000-C",
-    "path": "kayna-funkt/sensecap-t2000-c",
-    "tenant": "kayna-funkt"
-  },
-  {
-    "codec": "codec.js",
-    "name": "Sentinum Febris",
-    "path": "kayna-funkt/sentinum-febris",
-    "tenant": "kayna-funkt"
-  },
-  {
-    "codec": "codec.js",
-    "name": "Siterwell GS816A CO Sensor mit Alarm SWL-GS816A",
-    "path": "kayna-funkt/siterwell-gs816a-co-sensor-mit-alarm-swl-gs816a",
-    "tenant": "kayna-funkt"
-  },
-  {
-    "codec": "codec.js",
-    "name": "Thermokon MCS LRW",
-    "path": "kayna-funkt/thermokon-mcs-lrw",
-    "tenant": "kayna-funkt"
-  },
-  {
-    "codec": "codec.js",
-    "name": "dnt LW-eTRV",
-    "path": "kayna-funkt/dnt-lw-etrv",
-    "tenant": "kayna-funkt"
-  },
-  {
-    "codec": "codec.js",
-    "name": "dnt LW-eTRV-C",
-    "path": "kayna-funkt/dnt-lw-etrv-c",
-    "tenant": "kayna-funkt"
-  },
-  {
-    "codec": "codec.js",
-    "name": "dnt-LW-eTRV",
-    "path": "kayna-funkt/dnt-lw-etrv",
-    "tenant": "kayna-funkt"
   }
 ]
