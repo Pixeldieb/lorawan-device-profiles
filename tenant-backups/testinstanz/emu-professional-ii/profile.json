@@ -63,6 +63,30 @@
       "kind": "UNKNOWN",
       "name": ""
     },
+    "energy_export_t1_kwh": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "energy_export_t2_kwh": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "energy_export_total_kwh": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "energy_import_t1_kwh": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "energy_import_t2_kwh": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "energy_import_total_kwh": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
     "errorcode_CTRatioChange": {
       "kind": "STRING",
       "name": "errorcode_CTRatioChange"
@@ -104,12 +128,16 @@
       "name": "medium_type"
     },
     "meter-typ_value": {
+      "kind": "STRING",
+      "name": "Meter Type Value"
+    },
+    "meter_timestamp": {
       "kind": "UNKNOWN",
       "name": ""
     },
     "serial-number_value": {
-      "kind": "UNKNOWN",
-      "name": ""
+      "kind": "STRING",
+      "name": "Seriennummer"
     },
     "timeStamp": {
       "kind": "STRING",

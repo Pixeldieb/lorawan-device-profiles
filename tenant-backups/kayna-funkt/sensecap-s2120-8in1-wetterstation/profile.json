@@ -27,6 +27,10 @@
       "kind": "UNKNOWN",
       "name": ""
     },
+    "battery_percent": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
     "cumulative_rainfall_mm": {
       "kind": "UNKNOWN",
       "name": ""

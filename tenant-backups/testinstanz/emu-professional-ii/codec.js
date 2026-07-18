@@ -120,6 +120,18 @@ function decodeUplink(input) {
         "type": 1,
         "desc": "Electricity"
     };
+
+    // Stable flat aliases for MQTT / Home Assistant energy dashboards.
+    function energyValue(key) {
+        return obj.data[key] && typeof obj.data[key].value === "number" ? obj.data[key].value : 0;
+    }
+    obj.data.energy_import_t1_kwh = Number((energyValue("Active Energy Import T1") / 1000).toFixed(3));
+    obj.data.energy_import_t2_kwh = Number((energyValue("Active Energy Import T2") / 1000).toFixed(3));
+    obj.data.energy_import_total_kwh = Number((obj.data.energy_import_t1_kwh + obj.data.energy_import_t2_kwh).toFixed(3));
+    obj.data.energy_export_t1_kwh = Number((energyValue("Active Energy Export T1") / 1000).toFixed(3));
+    obj.data.energy_export_t2_kwh = Number((energyValue("Active Energy Export T2") / 1000).toFixed(3));
+    obj.data.energy_export_total_kwh = Number((obj.data.energy_export_t1_kwh + obj.data.energy_export_t2_kwh).toFixed(3));
+    obj.data.meter_timestamp = timeStamp;
          
     return obj;
 }
