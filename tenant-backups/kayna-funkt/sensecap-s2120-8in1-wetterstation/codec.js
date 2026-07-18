@@ -6,37 +6,69 @@
  * - Firmware v2.0 and later: frame identifiers 0x4A, 0x4B and 0x4C
  * - Battery, device information, interval, error and sensor status frames
  *
- * The decoder returns flat, human-readable fields and does not expose the
- * internal SenseCAP measurement identifiers as telemetry values.
+ * Important behavior:
+ * - Available measurements are always returned.
+ * - Sensor error frames do not invalidate valid measurements.
+ * - Missing measurement groups are omitted.
+ * - Missing values are never replaced with false zero values.
+ * - Sensor errors are returned as warnings, not decoder errors.
  */
 function decodeUplink(input) {
-  var warnings = [];
-  var errors = [];
+  var bytes =
+    input && input.bytes
+      ? input.bytes
+      : [];
+
+  var fPort =
+    input && input.fPort !== undefined
+      ? input.fPort
+      : 0;
 
   var data = {
     decoder_valid: true,
-    f_port: input.fPort,
-    payload_hex: bytesToHex(input.bytes)
+    f_port: fPort
   };
 
-  try {
-    decodePayload(
-      input.bytes,
-      data,
-      warnings,
-      errors
-    );
-  } catch (error) {
-    data.decoder_valid = false;
+  var warnings = [];
 
-    errors.push(
-      String(
-        error && error.message
-          ? error.message
-          : error
-      )
-    );
+  /*
+   * Empty application payloads can occur on fPort 0
+   * when the device answers LoRaWAN MAC commands.
+   */
+  if (bytes.length === 0) {
+    data.payload_empty = true;
+
+    return {
+      data: data
+    };
   }
+
+  /*
+   * SenseCAP uses fPort 199 for management,
+   * configuration and device-status payloads.
+   *
+   * These payloads do not contain normal S2120
+   * weather measurement frames.
+   */
+  if (fPort === 199) {
+    data.management_payload = true;
+    data.payload_hex = bytesToHex(bytes);
+
+    warnings.push(
+      'SenseCAP management payload on fPort 199; no weather measurements are contained in this frame.'
+    );
+
+    return {
+      data: data,
+      warnings: warnings
+    };
+  }
+
+  decodeFrames(
+    bytes,
+    data,
+    warnings
+  );
 
   var result = {
     data: data
@@ -46,83 +78,92 @@ function decodeUplink(input) {
     result.warnings = warnings;
   }
 
-  if (errors.length > 0) {
-    result.errors = errors;
-  }
-
   return result;
 }
 
 /**
- * Decodes all concatenated frames in an uplink payload.
+ * Decodes all concatenated SenseCAP frames.
  *
- * @param {number[]} bytes Payload bytes.
- * @param {object} data Flat decoded output object.
+ * @param {number[]} bytes Complete uplink payload.
+ * @param {object} data Decoded ChirpStack data object.
  * @param {string[]} warnings Decoder warnings.
- * @param {string[]} errors Decoder errors.
  */
-function decodePayload(
+function decodeFrames(
   bytes,
   data,
-  warnings,
-  errors
+  warnings
 ) {
-  if (!bytes || bytes.length === 0) {
-    data.decoder_valid = false;
-
-    errors.push(
-      'The uplink payload is empty.'
-    );
-
-    return;
-  }
-
   var offset = 0;
+
   var frameIdentifiers = [];
-  var unparsedFrameIdentifiers = [];
-  var unparsedFrameData = [];
-  var weatherFrameFound = false;
+
+  var primaryWeatherFrameReceived = false;
+  var secondaryWeatherFrameReceived = false;
+  var extendedWeatherFrameReceived = false;
+  var sensorErrorPresent = false;
 
   while (offset < bytes.length) {
     var frameIdentifier =
-      bytes[offset] & 0xFF;
+      readUInt8(
+        bytes,
+        offset
+      );
 
     var frameLength =
-      getFrameLength(frameIdentifier);
+      getFrameLength(
+        frameIdentifier
+      );
 
     var frameIdentifierHex =
-      byteToHex(frameIdentifier);
+      byteToHex(
+        frameIdentifier
+      );
 
+    /*
+     * An unknown frame cannot safely be skipped because
+     * its length is unknown. Previously decoded values
+     * are still returned.
+     */
     if (frameLength === 0) {
       data.decoder_valid = false;
 
-      errors.push(
+      data.unparsed_payload_hex =
+        bytesToHex(
+          bytes.slice(offset)
+        );
+
+      warnings.push(
         'Unknown frame identifier 0x' +
         frameIdentifierHex +
         ' at byte offset ' +
         offset +
-        '.'
+        '. Remaining bytes were not decoded.'
       );
 
       break;
     }
 
+    /*
+     * Keep previously decoded measurements when the
+     * final frame is incomplete.
+     */
     if (
       offset + frameLength >
       bytes.length
     ) {
       data.decoder_valid = false;
 
-      errors.push(
+      data.unparsed_payload_hex =
+        bytesToHex(
+          bytes.slice(offset)
+        );
+
+      warnings.push(
         'Truncated frame 0x' +
         frameIdentifierHex +
         ' at byte offset ' +
         offset +
-        ': expected ' +
-        frameLength +
-        ' bytes but only ' +
-        (bytes.length - offset) +
-        ' bytes remain.'
+        '.'
       );
 
       break;
@@ -133,6 +174,14 @@ function decodePayload(
     );
 
     switch (frameIdentifier) {
+      /*
+       * Primary weather data:
+       * - Air temperature
+       * - Air humidity
+       * - Light intensity
+       * - UV index
+       * - Wind speed
+       */
       case 0x01:
       case 0x4A:
         decodePrimaryWeatherFrame(
@@ -141,9 +190,15 @@ function decodePayload(
           data
         );
 
-        weatherFrameFound = true;
+        primaryWeatherFrameReceived = true;
         break;
 
+      /*
+       * Secondary weather data:
+       * - Wind direction
+       * - Rainfall intensity
+       * - Barometric pressure
+       */
       case 0x02:
       case 0x4B:
         decodeSecondaryWeatherFrame(
@@ -152,9 +207,14 @@ function decodePayload(
           data
         );
 
-        weatherFrameFound = true;
+        secondaryWeatherFrameReceived = true;
         break;
 
+      /*
+       * Extended weather data:
+       * - Peak wind gust
+       * - Cumulative rainfall
+       */
       case 0x4C:
         decodeExtendedWeatherFrame(
           bytes,
@@ -162,9 +222,12 @@ function decodePayload(
           data
         );
 
-        weatherFrameFound = true;
+        extendedWeatherFrameReceived = true;
         break;
 
+      /*
+       * Battery frame.
+       */
       case 0x03:
         decodeBatteryFrame(
           bytes,
@@ -173,6 +236,9 @@ function decodePayload(
         );
         break;
 
+      /*
+       * Device information frame.
+       */
       case 0x04:
         decodeDeviceInformationFrame(
           bytes,
@@ -181,6 +247,9 @@ function decodePayload(
         );
         break;
 
+      /*
+       * Measurement interval frame.
+       */
       case 0x05:
         decodeIntervalFrame(
           bytes,
@@ -189,6 +258,11 @@ function decodePayload(
         );
         break;
 
+      /*
+       * Sensor error frame.
+       *
+       * This does not invalidate already decoded values.
+       */
       case 0x06:
         decodeErrorFrame(
           bytes,
@@ -196,8 +270,17 @@ function decodePayload(
           data,
           warnings
         );
+
+        sensorErrorPresent =
+          readUInt8(
+            bytes,
+            offset + 1
+          ) !== 0x00;
         break;
 
+      /*
+       * Sensor status frame.
+       */
       case 0x10:
         decodeSensorStatusFrame(
           bytes,
@@ -206,20 +289,27 @@ function decodePayload(
         );
         break;
 
+      /*
+       * Frames with known lengths but without documented
+       * S2120 weather measurement decoding are safely skipped.
+       */
       default:
-        unparsedFrameIdentifiers.push(
-          frameIdentifierHex
-        );
-
-        unparsedFrameData.push(
+        data[
+          'frame_0x' +
           frameIdentifierHex +
-          ':' +
+          '_payload_hex'
+        ] =
           bytesToHex(
             bytes.slice(
               offset + 1,
               offset + frameLength
             )
-          )
+          );
+
+        warnings.push(
+          'Frame 0x' +
+          frameIdentifierHex +
+          ' was skipped because no measurement decoder is defined for it.'
         );
         break;
     }
@@ -230,44 +320,66 @@ function decodePayload(
   data.frame_identifiers =
     frameIdentifiers.join(',');
 
+  data.primary_weather_data_available =
+    primaryWeatherFrameReceived;
+
+  data.secondary_weather_data_available =
+    secondaryWeatherFrameReceived;
+
+  data.extended_weather_data_available =
+    extendedWeatherFrameReceived;
+
+  data.sensor_error_present =
+    sensorErrorPresent;
+
   if (
-    weatherFrameFound &&
-    data.sensor_data_valid === undefined
+    primaryWeatherFrameReceived ||
+    secondaryWeatherFrameReceived ||
+    extendedWeatherFrameReceived
   ) {
-    data.sensor_data_valid = true;
+    data.weather_data_available = true;
+
+    data.weather_data_complete =
+      primaryWeatherFrameReceived &&
+      secondaryWeatherFrameReceived &&
+      extendedWeatherFrameReceived &&
+      !sensorErrorPresent;
+  } else {
+    data.weather_data_available = false;
+    data.weather_data_complete = false;
   }
 
+  /*
+   * A missing 0x4B frame must not cause the valid
+   * 0x4A and 0x4C measurements to be discarded.
+   */
   if (
-    unparsedFrameIdentifiers.length > 0
+    !secondaryWeatherFrameReceived &&
+    (
+      primaryWeatherFrameReceived ||
+      extendedWeatherFrameReceived
+    )
   ) {
-    data.unparsed_frame_count =
-      unparsedFrameIdentifiers.length;
-
-    data.unparsed_frame_identifiers =
-      unparsedFrameIdentifiers.join(',');
-
-    data.unparsed_frame_data =
-      unparsedFrameData.join('|');
-
     warnings.push(
-      'The payload contains recognized frame lengths without documented decoding logic: ' +
-      unparsedFrameIdentifiers.join(', ') +
-      '.'
+      'The secondary weather frame is missing. Wind direction, rainfall intensity and barometric pressure are therefore not included.'
     );
   }
 }
 
 /**
- * Returns the complete frame length in bytes,
- * including the identifier byte.
+ * Returns the complete length of a frame,
+ * including its identifier byte.
  *
  * @param {number} frameIdentifier Frame identifier.
- * @returns {number} Frame length in bytes, or zero when unknown.
+ * @returns {number} Frame length or zero when unknown.
  */
 function getFrameLength(
   frameIdentifier
 ) {
   switch (frameIdentifier) {
+    /*
+     * Eleven-byte frames.
+     */
     case 0x01:
     case 0x20:
     case 0x21:
@@ -283,18 +395,30 @@ function getFrameLength(
     case 0x4A:
       return 11;
 
+    /*
+     * Nine-byte frames.
+     */
     case 0x02:
     case 0x4B:
       return 9;
 
+    /*
+     * Two-byte frames.
+     */
     case 0x03:
     case 0x06:
       return 2;
 
+    /*
+     * Five-byte frames.
+     */
     case 0x05:
     case 0x34:
       return 5;
 
+    /*
+     * Ten-byte frames.
+     */
     case 0x04:
     case 0x10:
     case 0x32:
@@ -305,6 +429,9 @@ function getFrameLength(
     case 0x39:
       return 10;
 
+    /*
+     * Seven-byte extended weather frame.
+     */
     case 0x4C:
       return 7;
 
@@ -318,7 +445,7 @@ function getFrameLength(
  *
  * @param {number[]} bytes Payload bytes.
  * @param {number} offset Frame start offset.
- * @param {object} data Decoded output object.
+ * @param {object} data Decoded data object.
  */
 function decodePrimaryWeatherFrame(
   bytes,
@@ -361,7 +488,7 @@ function decodePrimaryWeatherFrame(
  *
  * @param {number[]} bytes Payload bytes.
  * @param {number} offset Frame start offset.
- * @param {object} data Decoded output object.
+ * @param {object} data Decoded data object.
  */
 function decodeSecondaryWeatherFrame(
   bytes,
@@ -386,11 +513,11 @@ function decodeSecondaryWeatherFrame(
       offset + 3
     ) / 1000;
 
-  data.barometric_pressure_pa =
-    barometricPressureRaw * 10;
-
   data.barometric_pressure_hpa =
     barometricPressureRaw / 10;
+
+  data.barometric_pressure_pa =
+    barometricPressureRaw * 10;
 }
 
 /**
@@ -398,7 +525,7 @@ function decodeSecondaryWeatherFrame(
  *
  * @param {number[]} bytes Payload bytes.
  * @param {number} offset Frame start offset.
- * @param {object} data Decoded output object.
+ * @param {object} data Decoded data object.
  */
 function decodeExtendedWeatherFrame(
   bytes,
@@ -423,7 +550,7 @@ function decodeExtendedWeatherFrame(
  *
  * @param {number[]} bytes Payload bytes.
  * @param {number} offset Frame start offset.
- * @param {object} data Decoded output object.
+ * @param {object} data Decoded data object.
  */
 function decodeBatteryFrame(
   bytes,
@@ -442,7 +569,7 @@ function decodeBatteryFrame(
  *
  * @param {number[]} bytes Payload bytes.
  * @param {number} offset Frame start offset.
- * @param {object} data Decoded output object.
+ * @param {object} data Decoded data object.
  */
 function decodeDeviceInformationFrame(
   bytes,
@@ -455,7 +582,7 @@ function decodeDeviceInformationFrame(
       offset + 6
     );
 
-  var reservedIntervalMinutes =
+  var gpsIntervalMinutes =
     readUInt16BigEndian(
       bytes,
       offset + 8
@@ -495,11 +622,11 @@ function decodeDeviceInformationFrame(
   data.measurement_interval_seconds =
     measurementIntervalMinutes * 60;
 
-  data.reserved_interval_minutes =
-    reservedIntervalMinutes;
+  data.gps_interval_minutes =
+    gpsIntervalMinutes;
 
-  data.reserved_interval_seconds =
-    reservedIntervalMinutes * 60;
+  data.gps_interval_seconds =
+    gpsIntervalMinutes * 60;
 }
 
 /**
@@ -507,7 +634,7 @@ function decodeDeviceInformationFrame(
  *
  * @param {number[]} bytes Payload bytes.
  * @param {number} offset Frame start offset.
- * @param {object} data Decoded output object.
+ * @param {object} data Decoded data object.
  */
 function decodeIntervalFrame(
   bytes,
@@ -520,7 +647,7 @@ function decodeIntervalFrame(
       offset + 1
     );
 
-  var reservedIntervalMinutes =
+  var gpsIntervalMinutes =
     readUInt16BigEndian(
       bytes,
       offset + 3
@@ -532,19 +659,22 @@ function decodeIntervalFrame(
   data.measurement_interval_seconds =
     measurementIntervalMinutes * 60;
 
-  data.reserved_interval_minutes =
-    reservedIntervalMinutes;
+  data.gps_interval_minutes =
+    gpsIntervalMinutes;
 
-  data.reserved_interval_seconds =
-    reservedIntervalMinutes * 60;
+  data.gps_interval_seconds =
+    gpsIntervalMinutes * 60;
 }
 
 /**
  * Decodes frame 0x06.
  *
+ * The sensor error is exposed as diagnostic data.
+ * It does not invalidate other measurements.
+ *
  * @param {number[]} bytes Payload bytes.
  * @param {number} offset Frame start offset.
- * @param {object} data Decoded output object.
+ * @param {object} data Decoded data object.
  * @param {string[]} warnings Decoder warnings.
  */
 function decodeErrorFrame(
@@ -560,7 +690,9 @@ function decodeErrorFrame(
     );
 
   var errorCodeHex =
-    byteToHex(errorCode);
+    byteToHex(
+      errorCode
+    );
 
   var errorName =
     getSensorErrorName(
@@ -573,16 +705,13 @@ function decodeErrorFrame(
   data.sensor_error =
     errorName;
 
-  data.sensor_data_valid =
-    errorCode === 0x00;
-
   if (errorCode !== 0x00) {
     warnings.push(
       'The sensor reported error 0x' +
       errorCodeHex +
       ': ' +
       errorName +
-      '.'
+      '. Available measurements were decoded anyway.'
     );
   }
 }
@@ -592,7 +721,7 @@ function decodeErrorFrame(
  *
  * @param {number[]} bytes Payload bytes.
  * @param {number} offset Frame start offset.
- * @param {object} data Decoded output object.
+ * @param {object} data Decoded data object.
  */
 function decodeSensorStatusFrame(
   bytes,
@@ -624,8 +753,7 @@ function decodeSensorStatusFrame(
 }
 
 /**
- * Returns the symbolic name for a
- * SenseCAP sensor error code.
+ * Returns the symbolic SenseCAP sensor error name.
  *
  * @param {number} errorCode Numeric sensor error code.
  * @returns {string} Symbolic error name.
@@ -713,7 +841,7 @@ function getSensorErrorName(
  *
  * @param {number[]} bytes Payload bytes.
  * @param {number} offset Byte offset.
- * @returns {number} Unsigned 8-bit value.
+ * @returns {number} Unsigned value.
  */
 function readUInt8(
   bytes,
@@ -727,7 +855,7 @@ function readUInt8(
  *
  * @param {number[]} bytes Payload bytes.
  * @param {number} offset Byte offset.
- * @returns {number} Unsigned 16-bit value.
+ * @returns {number} Unsigned value.
  */
 function readUInt16BigEndian(
   bytes,
@@ -750,7 +878,7 @@ function readUInt16BigEndian(
  *
  * @param {number[]} bytes Payload bytes.
  * @param {number} offset Byte offset.
- * @returns {number} Signed 16-bit value.
+ * @returns {number} Signed value.
  */
 function readInt16BigEndian(
   bytes,
@@ -770,12 +898,13 @@ function readInt16BigEndian(
 }
 
 /**
- * Reads an unsigned 32-bit big-endian integer
- * without signed bitwise conversion.
+ * Reads an unsigned 32-bit big-endian integer.
+ *
+ * This avoids signed 32-bit JavaScript bitwise conversion.
  *
  * @param {number[]} bytes Payload bytes.
  * @param {number} offset Byte offset.
- * @returns {number} Unsigned 32-bit value.
+ * @returns {number} Unsigned value.
  */
 function readUInt32BigEndian(
   bytes,
@@ -802,11 +931,11 @@ function readUInt32BigEndian(
 }
 
 /**
- * Converts one byte to a two-character
- * uppercase hexadecimal string.
+ * Converts one byte to a two-character uppercase
+ * hexadecimal string.
  *
  * @param {number} value Byte value.
- * @returns {string} Two-character hexadecimal string.
+ * @returns {string} Hexadecimal byte.
  */
 function byteToHex(
   value

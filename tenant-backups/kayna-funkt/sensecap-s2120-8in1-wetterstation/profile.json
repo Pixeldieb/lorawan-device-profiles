@@ -43,6 +43,10 @@
       "kind": "UNKNOWN",
       "name": ""
     },
+    "extended_weather_data_available": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
     "f_port": {
       "kind": "UNKNOWN",
       "name": ""
@@ -271,6 +275,14 @@
       "kind": "UNKNOWN",
       "name": ""
     },
+    "primary_weather_data_available": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "secondary_weather_data_available": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
     "sensor_data_valid": {
       "kind": "UNKNOWN",
       "name": ""
@@ -283,11 +295,23 @@
       "kind": "UNKNOWN",
       "name": ""
     },
+    "sensor_error_present": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
     "uv_index": {
       "kind": "UNKNOWN",
       "name": ""
     },
     "valid": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "weather_data_available": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "weather_data_complete": {
       "kind": "UNKNOWN",
       "name": ""
     },
