@@ -27,6 +27,14 @@
       "kind": "UNKNOWN",
       "name": ""
     },
+    "barometric_pressure_hpa": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "barometric_pressure_pa": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
     "battery_percent": {
       "kind": "UNKNOWN",
       "name": ""
@@ -267,6 +275,10 @@
       "kind": "UNKNOWN",
       "name": ""
     },
+    "payload_empty": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
     "payload_hex": {
       "kind": "UNKNOWN",
       "name": ""
@@ -276,6 +288,10 @@
       "name": ""
     },
     "primary_weather_data_available": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "rainfall_intensity_mm_h": {
       "kind": "UNKNOWN",
       "name": ""
     },
@@ -312,6 +328,10 @@
       "name": ""
     },
     "weather_data_complete": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "wind_direction_degrees": {
       "kind": "UNKNOWN",
       "name": ""
     },
