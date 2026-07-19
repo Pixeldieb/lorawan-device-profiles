@@ -67,6 +67,10 @@
       "kind": "UNKNOWN",
       "name": ""
     },
+    "management_payload": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
     "messages_0_0_Battery(%)": {
       "kind": "GAUGE",
       "name": "Battery level (%)"
