@@ -1,0 +1,28 @@
+[
+  {
+    "name": "VoBo-XX Standard Payload",
+    "input": {
+      "fPort": 1,
+      "bytes": [0x27, 0x3e, 0xf1, 0x33, 0x64, 0x72, 0xe3, 0x0c, 0x00, 0x00, 0x00]
+    },
+    "expected": {
+      "data": {
+        "DIN1": 1,
+        "DIN2": 1,
+        "DIN3": 1,
+        "WKUP": 0,
+        "ADC1": 994,
+        "ADC2": 1009,
+        "ADC3": 1603,
+        "Battery": 3528,
+        "Temperature": 25.75,
+        "Modbus0": 0,
+        "fport": 1,
+        "voboType": "VoBoXX",
+        "payloadType": "Standard"
+      },
+      "warnings": [],
+      "errors": []
+    }
+  }
+]

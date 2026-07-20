@@ -1,0 +1,57 @@
+[device]
+id = "7170696c-905d-4c57-806b-dab52654a776"
+name = "VoBo-TC"
+description = "The VoBo TC is an industrial grade 12 channel thermocouple LoRaWAN® bridge certified for Class 1 Division 2 hazardous areas."
+
+[[device.firmware]]
+version = "2.00.02"
+profiles = [
+    "us915-class-a.toml",
+    "eu868-class-a.toml",
+    "au915-class-a.toml",
+    "as923-class-a.toml",
+    "as923-2-class-a.toml",
+    "as923-3-class-a.toml",
+    "as923-4-class-a.toml",
+    "in865-class-a.toml",
+]
+codec = "Decoder.js"
+
+[[device.firmware]]
+version = "2.00.01"
+profiles = [
+    "us915-class-a.toml",
+    "eu868-class-a.toml",
+    "au915-class-a.toml",
+    "as923-class-a.toml",
+    "as923-2-class-a.toml",
+    "as923-3-class-a.toml",
+    "as923-4-class-a.toml",
+    "in865-class-a.toml",
+]
+codec = "Decoder.js"
+
+[[device.firmware]]
+version = "2.00.00"
+profiles = [
+    "us915-class-a.toml",
+    "eu868-class-a.toml",
+    "au915-class-a.toml",
+    "as923-class-a.toml",
+    "as923-2-class-a.toml",
+    "as923-3-class-a.toml",
+    "as923-4-class-a.toml",
+    "in865-class-a.toml",
+]
+codec = "Decoder.js"
+
+[[device.firmware]]
+version = "1.00.00"
+profiles = [
+    "us915-class-a.toml",
+]
+codec = "Decoder.js"
+
+[device.metadata]
+product_url = "https://volleyboast.com/products/vobotc/"
+documentation_url = "https://volleyboast.com/products/Latest/VoBoTC/DCM-TC04-B1-VoBo_TC_Datasheet.pdf"

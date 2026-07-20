@@ -1,0 +1,71 @@
+[device]
+id = "9cf49dcf-e345-4759-a9ba-ac9055b70bda"
+name = "VoBo GP-1"
+description = "Universal industrial grade LoRaWAN endpoint that converts wired industrial sensors into wireless sensors, designed for rugged outdoor use."
+
+[[device.firmware]]
+version = "2.02.00"
+profiles = [
+    "us915-class-a.toml",
+    "eu868-class-a.toml",
+    "au915-class-a.toml",
+    "as923-class-a.toml",
+    "as923-2-class-a.toml",
+    "as923-3-class-a.toml",
+    "as923-4-class-a.toml",
+    "in865-class-a.toml",
+]
+codec = "Decoder.js"
+
+[[device.firmware]]
+version = "2.01.01"
+profiles = [
+    "us915-class-a.toml",
+    "eu868-class-a.toml",
+    "au915-class-a.toml",
+    "as923-class-a.toml",
+    "as923-2-class-a.toml",
+    "as923-3-class-a.toml",
+    "as923-4-class-a.toml",
+    "in865-class-a.toml",
+]
+codec = "Decoder.js"
+
+[[device.firmware]]
+version = "2.01.00"
+profiles = [
+    "us915-class-a.toml",
+    "eu868-class-a.toml",
+    "au915-class-a.toml",
+    "as923-class-a.toml",
+    "as923-2-class-a.toml",
+    "as923-3-class-a.toml",
+    "as923-4-class-a.toml",
+    "in865-class-a.toml",
+]
+codec = "Decoder.js"
+
+[[device.firmware]]
+version = "2.00.00"
+profiles = [
+    "us915-class-a.toml",
+    "eu868-class-a.toml",
+    "au915-class-a.toml",
+    "as923-class-a.toml",
+    "as923-2-class-a.toml",
+    "as923-3-class-a.toml",
+    "as923-4-class-a.toml",
+    "in865-class-a.toml",
+]
+codec = "Decoder.js"
+
+[[device.firmware]]
+version = "1.03.10"
+profiles = [
+    "us915-class-a.toml",
+]
+codec = "Decoder.js"
+
+[device.metadata]
+product_url = "https://volleyboast.com/products/vobo-endpoints/"
+documentation_url = "https://volleyboast.com/products/Latest/VoBogp1hl1/DCM_0052_A6_VoBo_GP1_HL1_Spec_Sheet.pdf"

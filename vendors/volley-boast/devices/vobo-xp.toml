@@ -1,0 +1,52 @@
+[device]
+id = "7b227927-3d56-4e70-ad5a-866cabb34b66"
+name = "VoBo-XP"
+description = "The VoBo XP is an externally powered, intelligent, industrial grade, 7 input, 4 output, LoRaWAN® bridge certified (pending) for hazardous areas (IECEx, ATEx, UL/CSA)."
+
+[[device.firmware]]
+version = "1.00.00"
+profiles = [
+    "us915-class-a.toml",
+    "us915-class-c.toml",
+    "eu868-class-a.toml",
+    "eu868-class-c.toml",
+    "au915-class-a.toml",
+    "au915-class-c.toml",
+    "as923-class-a.toml",
+    "as923-class-c.toml",
+    "as923-2-class-a.toml",
+    "as923-2-class-c.toml",
+    "as923-3-class-a.toml",
+    "as923-3-class-c.toml",
+    "as923-4-class-a.toml",
+    "as923-4-class-c.toml",
+    "in865-class-a.toml",
+    "in865-class-c.toml",
+]
+codec = "Decoder.js"
+
+[[device.firmware]]
+version = "1.01.00"
+profiles = [
+    "us915-class-a.toml",
+    "us915-class-c.toml",
+    "eu868-class-a.toml",
+    "eu868-class-c.toml",
+    "au915-class-a.toml",
+    "au915-class-c.toml",
+    "as923-class-a.toml",
+    "as923-class-c.toml",
+    "as923-2-class-a.toml",
+    "as923-2-class-c.toml",
+    "as923-3-class-a.toml",
+    "as923-3-class-c.toml",
+    "as923-4-class-a.toml",
+    "as923-4-class-c.toml",
+    "in865-class-a.toml",
+    "in865-class-c.toml",
+]
+codec = "Decoder.js"
+
+[device.metadata]
+product_url = "https://volleyboast.com/products/voboxp1/"
+documentation_url = "https://volleyboast.com/products/Latest/VoBoXP/DCM-XP04-A5-VoBo_XP_Datasheet_Draft.pdf"
