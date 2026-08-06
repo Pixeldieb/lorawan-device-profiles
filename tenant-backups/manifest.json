@@ -294,6 +294,12 @@
     "tenant": "Testinstanz"
   },
   {
+    "codec": "codec.js",
+    "name": "Neues Gerät",
+    "path": "testinstanz/neues-ger-t",
+    "tenant": "Testinstanz"
+  },
+  {
     "codec": null,
     "name": "Pepperl und Fuchs Wilsen",
     "path": "testinstanz/pepperl-und-fuchs-wilsen",
