@@ -59,7 +59,23 @@
       "kind": "UNKNOWN",
       "name": ""
     },
+    "firmware_version": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
     "frame_identifiers": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "gps_interval_minutes": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "gps_interval_seconds": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "hardware_version": {
       "kind": "UNKNOWN",
       "name": ""
     },
@@ -68,6 +84,14 @@
       "name": ""
     },
     "management_payload": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "measurement_interval_minutes": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "measurement_interval_seconds": {
       "kind": "UNKNOWN",
       "name": ""
     },
