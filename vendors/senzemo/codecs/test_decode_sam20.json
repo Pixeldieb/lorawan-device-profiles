@@ -1,0 +1,232 @@
+[
+  {
+    "name": "Real device uplink (config packet, fPort 3, 9 bytes)",
+    "input": {
+      "fPort": 3,
+      "bytes": [
+        0,
+        15,
+        0,
+        24,
+        128,
+        3,
+        3,
+        20,
+        10
+      ]
+    },
+    "expected": {
+      "data": {
+        "Status": 0,
+        "SendPeriod": 15,
+        "MoveThr": 0,
+        "PacketConfirm": 24,
+        "DataRate": 0,
+        "ADRon": true,
+        "FamilyId": 3,
+        "ProductId": 3,
+        "HW": 2,
+        "FW": 1
+      },
+      "warnings": [],
+      "errors": []
+    }
+  },
+  {
+    "name": "Real device uplink (data packet, fPort 2, 8 bytes)",
+    "input": {
+      "fPort": 2,
+      "bytes": [
+        10,
+        159,
+        28,
+        120,
+        38,
+        239,
+        6,
+        54
+      ]
+    },
+    "expected": {
+      "data": {
+        "Status": 0,
+        "Temperature": 27.19,
+        "Humidity": 72.88,
+        "AirPressure": 996.7,
+        "BatteryLevel": 1590,
+        "DebugFirmware": false
+      },
+      "warnings": [],
+      "errors": []
+    }
+  },
+  {
+    "name": "Alert packet - movement detected",
+    "input": {
+      "fPort": 1,
+      "bytes": [
+        1
+      ]
+    },
+    "expected": {
+      "data": {
+        "Alert": 1,
+        "MoveDetected": true
+      },
+      "warnings": [],
+      "errors": []
+    }
+  },
+  {
+    "name": "Data packet with status (9 bytes)",
+    "input": {
+      "fPort": 2,
+      "bytes": [
+        0,
+        9,
+        41,
+        17,
+        215,
+        39,
+        148,
+        14,
+        16
+      ]
+    },
+    "expected": {
+      "data": {
+        "Status": 0,
+        "Temperature": 23.45,
+        "Humidity": 45.67,
+        "AirPressure": 1013.2,
+        "BatteryLevel": 3600,
+        "DebugFirmware": false
+      },
+      "warnings": [],
+      "errors": []
+    }
+  },
+  {
+    "name": "Data packet with negative temperature",
+    "input": {
+      "fPort": 2,
+      "bytes": [
+        253,
+        243,
+        31,
+        64,
+        39,
+        3,
+        13,
+        222
+      ]
+    },
+    "expected": {
+      "data": {
+        "Status": 0,
+        "Temperature": -5.25,
+        "Humidity": 80,
+        "AirPressure": 998.7,
+        "BatteryLevel": 3550,
+        "DebugFirmware": false
+      },
+      "warnings": [],
+      "errors": []
+    }
+  },
+  {
+    "name": "Debug firmware data packet on fPort 4",
+    "input": {
+      "fPort": 4,
+      "bytes": [
+        9,
+        41,
+        17,
+        215,
+        39,
+        148,
+        14,
+        16
+      ]
+    },
+    "expected": {
+      "data": {
+        "Status": 0,
+        "Temperature": 23.45,
+        "Humidity": 45.67,
+        "AirPressure": 1013.2,
+        "BatteryLevel": 3600,
+        "DebugFirmware": true
+      },
+      "warnings": [],
+      "errors": []
+    }
+  },
+  {
+    "name": "Data packet with 12-byte logging record (21 bytes)",
+    "input": {
+      "fPort": 2,
+      "bytes": [
+        0,
+        9,
+        41,
+        17,
+        215,
+        39,
+        148,
+        14,
+        16,
+        0,
+        18,
+        52,
+        0,
+        8,
+        162,
+        19,
+        136,
+        39,
+        141,
+        14,
+        6
+      ]
+    },
+    "expected": {
+      "data": {
+        "Status": 0,
+        "Temperature": 23.45,
+        "Humidity": 45.67,
+        "AirPressure": 1013.2,
+        "BatteryLevel": 3600,
+        "DebugFirmware": false,
+        "Logging": {
+          "FCnt": 4660,
+          "Status": 0,
+          "Temperature": 22.1,
+          "Humidity": 50,
+          "AirPressure": 1012.5,
+          "BatteryLevel": 3590
+        }
+      },
+      "warnings": [],
+      "errors": []
+    }
+  },
+  {
+    "name": "Shall not pass - unsupported fPort is rejected, not silently decoded",
+    "input": {
+      "fPort": 99,
+      "bytes": [
+        1,
+        2,
+        3
+      ]
+    },
+    "expected": {
+      "data": {},
+      "warnings": [],
+      "errors": [
+        "Unsupported FPort or packet length"
+      ]
+    }
+  }
+]

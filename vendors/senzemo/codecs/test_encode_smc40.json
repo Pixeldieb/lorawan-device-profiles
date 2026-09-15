@@ -1,0 +1,13 @@
+[
+  {
+    "name": "Test encode empty (device is configured over NFC, no downlink support)",
+    "input": {
+      "data": {}
+    },
+    "expected": {
+      "bytes": [],
+      "warnings": [],
+      "errors": []
+    }
+  }
+]

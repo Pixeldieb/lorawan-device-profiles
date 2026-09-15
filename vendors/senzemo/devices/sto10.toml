@@ -1,0 +1,18 @@
+[device]
+id = "a092f43f-54a4-41ac-9ab4-5024f363b4f5"
+name = "STO10 - Senstick Temperature Only"
+description = "Single temperature sensor for HACCP and cold-chain monitoring, reporting temperature and battery level."
+
+[[device.firmware]]
+version = "1.0"
+profiles = [
+    "EU868-1_0_3.toml",
+    "US915-1_0_3.toml",
+    "AU915-1_0_3.toml",
+    "AS923-1_0_3.toml",
+]
+codec = "sto10.js"
+
+[device.metadata]
+product_url = "https://senzemo.com/product/temperature-only-sensor/"
+documentation_url = "https://senzemo.com/documents/"

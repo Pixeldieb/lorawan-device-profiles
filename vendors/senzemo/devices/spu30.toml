@@ -1,0 +1,18 @@
+[device]
+id = "4329abac-7b8c-4b4a-882a-51534b8d00be"
+name = "SPU30 - Senspuck Pure"
+description = "Indoor air quality sensor measuring CO2, temperature, relative humidity and air pressure, with an optional VOC index."
+
+[[device.firmware]]
+version = "1.0"
+profiles = [
+    "EU868-1_0_3.toml",
+    "US915-1_0_3.toml",
+    "AU915-1_0_3.toml",
+    "AS923-1_0_3.toml",
+]
+codec = "spu30.js"
+
+[device.metadata]
+product_url = "https://senzemo.com/product/indoor-air-quality-sensor/"
+documentation_url = "https://senzemo.com/documents/"

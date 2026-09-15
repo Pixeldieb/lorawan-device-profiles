@@ -1,0 +1,18 @@
+[device]
+id = "04d3d294-fd21-4a37-805c-d53e2cedd4e4"
+name = "SMC40 - Senstick MicroClimate 40"
+description = "Microclimate sensor measuring temperature, relative humidity and air pressure, with a single-byte battery level."
+
+[[device.firmware]]
+version = "1.0"
+profiles = [
+    "EU868-1_0_3.toml",
+    "US915-1_0_3.toml",
+    "AU915-1_0_3.toml",
+    "AS923-1_0_3.toml",
+]
+codec = "smc40.js"
+
+[device.metadata]
+product_url = "https://senzemo.com/"
+documentation_url = "https://senzemo.com/documents/"

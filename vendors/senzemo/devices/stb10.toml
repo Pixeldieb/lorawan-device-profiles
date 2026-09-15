@@ -1,0 +1,18 @@
+[device]
+id = "93a727bd-3e12-41a6-8650-30ac92ff3f12"
+name = "STB10 - Senstick Temperature Buffer"
+description = "Dual temperature sensor reporting both buffered (thermal-inertia) and internal air temperature, for HACCP and cold-chain monitoring."
+
+[[device.firmware]]
+version = "1.0"
+profiles = [
+    "EU868-1_0_3.toml",
+    "US915-1_0_3.toml",
+    "AU915-1_0_3.toml",
+    "AS923-1_0_3.toml",
+]
+codec = "stb10.js"
+
+[device.metadata]
+product_url = "https://senzemo.com/product/temperature-buffer-sensor/"
+documentation_url = "https://senzemo.com/documents/"

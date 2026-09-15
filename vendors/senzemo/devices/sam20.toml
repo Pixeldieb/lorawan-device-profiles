@@ -1,0 +1,18 @@
+[device]
+id = "e6046c04-5f02-4bf9-a9c2-d63abb897bb2"
+name = "SAM20 - Senstick Ambient"
+description = "Indoor ambient sensor measuring temperature, relative humidity and air pressure, with movement detection and an optional on-board logging record replayed in the uplink."
+
+[[device.firmware]]
+version = "1.0"
+profiles = [
+    "EU868-1_0_3.toml",
+    "US915-1_0_3.toml",
+    "AU915-1_0_3.toml",
+    "AS923-1_0_3.toml",
+]
+codec = "sam20.js"
+
+[device.metadata]
+product_url = "https://senzemo.com/product/ambient-sensor/"
+documentation_url = "https://senzemo.com/documents/"

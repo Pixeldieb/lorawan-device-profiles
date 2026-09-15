@@ -1,0 +1,95 @@
+[
+  {
+    "name": "Real device uplink (data packet, fPort 2, 7 bytes)",
+    "input": {
+      "fPort": 2,
+      "bytes": [
+        9,
+        190,
+        22,
+        97,
+        38,
+        175,
+        206
+      ]
+    },
+    "expected": {
+      "data": {
+        "Status": 0,
+        "Temperature": 24.94,
+        "Humidity": 57.29,
+        "AirPressure": 990.3,
+        "BatteryLevel": 1608
+      },
+      "warnings": [],
+      "errors": []
+    }
+  },
+  {
+    "name": "Alert packet",
+    "input": {
+      "fPort": 1,
+      "bytes": [
+        1
+      ]
+    },
+    "expected": {
+      "data": {
+        "Status": 1
+      },
+      "warnings": [],
+      "errors": []
+    }
+  },
+  {
+    "name": "Config packet (fPort 3, 9 bytes)",
+    "input": {
+      "fPort": 3,
+      "bytes": [
+        0,
+        15,
+        0,
+        0,
+        133,
+        3,
+        4,
+        40,
+        10
+      ]
+    },
+    "expected": {
+      "data": {
+        "Status": 0,
+        "SendPeriod": 15,
+        "MoveThr": 0,
+        "PacketConfirm": 0,
+        "DataRate": 5,
+        "ADRon": true,
+        "FamilyId": 3,
+        "ProductId": 4,
+        "HW": 4,
+        "FW": 1
+      },
+      "warnings": [],
+      "errors": []
+    }
+  },
+  {
+    "name": "Shall not pass - unsupported fPort is rejected, not silently decoded",
+    "input": {
+      "fPort": 99,
+      "bytes": [
+        1,
+        2,
+        3
+      ]
+    },
+    "expected": {
+      "data": {},
+      "warnings": [],
+      "errors": [
+        "Unsupported FPort or packet length"
+      ]
+    }
+  }
+]

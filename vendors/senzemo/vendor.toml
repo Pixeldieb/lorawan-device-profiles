@@ -1,0 +1,19 @@
+[vendor]
+id = "45df2b9f-5927-4922-b0cb-a4be597fe2e7"
+name = "Senzemo"
+vendor_id = 0
+ouis = []
+devices = [
+    "kou20.toml",
+    "sam20.toml",
+    "smc30.toml",
+    "smc33.toml",
+    "smc40.toml",
+    "spu30.toml",
+    "ssm40.toml",
+    "stb10.toml",
+    "sto10.toml",
+]
+
+[vendor.metadata]
+homepage = "https://senzemo.com/"

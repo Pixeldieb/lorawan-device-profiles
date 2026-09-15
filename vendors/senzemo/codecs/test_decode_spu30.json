@@ -1,0 +1,151 @@
+[
+  {
+    "name": "Real device uplink (data packet, fPort 2, 12 bytes)",
+    "input": {
+      "fPort": 2,
+      "bytes": [
+        8,
+        207,
+        16,
+        11,
+        35,
+        142,
+        7,
+        179,
+        0,
+        174,
+        16,
+        196
+      ]
+    },
+    "expected": {
+      "data": {
+        "Status": 0,
+        "Temperature": 22.55,
+        "Humidity": 41.07,
+        "AirPressure": 910.2,
+        "Co2": 1971,
+        "VOCindex": 174,
+        "BatteryLevel": 4292
+      },
+      "warnings": [],
+      "errors": []
+    }
+  },
+  {
+    "name": "Data packet without status (10 bytes)",
+    "input": {
+      "fPort": 2,
+      "bytes": [
+        8,
+        102,
+        17,
+        168,
+        39,
+        146,
+        2,
+        138,
+        12,
+        228
+      ]
+    },
+    "expected": {
+      "data": {
+        "Status": 0,
+        "Temperature": 21.5,
+        "Humidity": 45.2,
+        "AirPressure": 1013,
+        "Co2": 650,
+        "BatteryLevel": 3300
+      },
+      "warnings": [],
+      "errors": []
+    }
+  },
+  {
+    "name": "Data packet with status (11 bytes)",
+    "input": {
+      "fPort": 2,
+      "bytes": [
+        0,
+        8,
+        102,
+        17,
+        168,
+        39,
+        146,
+        2,
+        138,
+        12,
+        228
+      ]
+    },
+    "expected": {
+      "data": {
+        "Status": 0,
+        "Temperature": 21.5,
+        "Humidity": 45.2,
+        "AirPressure": 1013,
+        "Co2": 650,
+        "BatteryLevel": 3300
+      },
+      "warnings": [],
+      "errors": []
+    }
+  },
+  {
+    "name": "Config packet (fPort 3, 11 bytes)",
+    "input": {
+      "fPort": 3,
+      "bytes": [
+        0,
+        15,
+        0,
+        133,
+        8,
+        12,
+        50,
+        3,
+        30,
+        10,
+        10
+      ]
+    },
+    "expected": {
+      "data": {
+        "Status": 0,
+        "SendPeriod": 15,
+        "PacketConfirm": 0,
+        "DataRate": 5,
+        "ADRon": true,
+        "Co2MidThreshold": 80,
+        "Co2HighThreshold": 120,
+        "LedIntensity": 50,
+        "FamilyId": 3,
+        "ProductId": 30,
+        "HW": 1,
+        "FW": 1
+      },
+      "warnings": [],
+      "errors": []
+    }
+  },
+  {
+    "name": "Shall not pass - unsupported fPort is rejected, not silently decoded",
+    "input": {
+      "fPort": 99,
+      "bytes": [
+        1,
+        2,
+        3
+      ]
+    },
+    "expected": {
+      "data": {},
+      "warnings": [],
+      "errors": [
+        "Unsupported FPort or packet length"
+      ]
+    }
+  }
+]

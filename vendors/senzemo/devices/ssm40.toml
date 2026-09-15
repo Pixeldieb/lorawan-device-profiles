@@ -1,0 +1,18 @@
+[device]
+id = "d6e8c7fd-75a4-4684-b714-f8407b6e9ee9"
+name = "SSM40 - Senstick Soil Moisture"
+description = "Soil moisture sensor reporting volumetric water content, raw soil moisture, sensor voltage and battery voltage, for agriculture and irrigation control."
+
+[[device.firmware]]
+version = "1.0"
+profiles = [
+    "EU868-1_0_3.toml",
+    "US915-1_0_3.toml",
+    "AU915-1_0_3.toml",
+    "AS923-1_0_3.toml",
+]
+codec = "ssm40.js"
+
+[device.metadata]
+product_url = "https://senzemo.com/product/soil-moisture-sensor/"
+documentation_url = "https://senzemo.com/documents/"

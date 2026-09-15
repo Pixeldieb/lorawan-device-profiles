@@ -1,0 +1,18 @@
+[device]
+id = "0d16dded-747e-4efd-8df3-753a0b8c31be"
+name = "KOU20 - Senstick Compost Temperature"
+description = "Compost temperature sensor with a long probe for waste-management and composting applications."
+
+[[device.firmware]]
+version = "1.0"
+profiles = [
+    "EU868-1_0_3.toml",
+    "US915-1_0_3.toml",
+    "AU915-1_0_3.toml",
+    "AS923-1_0_3.toml",
+]
+codec = "kou20.js"
+
+[device.metadata]
+product_url = "https://senzemo.com/product/compost-temperature-sensor/"
+documentation_url = "https://senzemo.com/documents/"

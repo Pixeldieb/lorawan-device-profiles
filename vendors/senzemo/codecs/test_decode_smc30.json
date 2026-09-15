@@ -1,0 +1,108 @@
+[
+  {
+    "name": "Real device uplink (data packet, fPort 2, 8 bytes)",
+    "input": {
+      "fPort": 2,
+      "bytes": [
+        0,
+        8,
+        101,
+        28,
+        135,
+        38,
+        253,
+        172
+      ]
+    },
+    "expected": {
+      "data": {
+        "Status": 0,
+        "Temperature": 21.49,
+        "Humidity": 73.03,
+        "AirPressure": 998.1,
+        "BatteryLevel": 2.72,
+        "BatteryPercent": 70
+      },
+      "warnings": [],
+      "errors": []
+    }
+  },
+  {
+    "name": "Real device uplink (data packet, fPort 2, 8 bytes)",
+    "input": {
+      "fPort": 2,
+      "bytes": [
+        0,
+        9,
+        144,
+        23,
+        68,
+        38,
+        235,
+        175
+      ]
+    },
+    "expected": {
+      "data": {
+        "Status": 0,
+        "Temperature": 24.48,
+        "Humidity": 59.56,
+        "AirPressure": 996.3,
+        "BatteryLevel": 2.75,
+        "BatteryPercent": 71.875
+      },
+      "warnings": [],
+      "errors": []
+    }
+  },
+  {
+    "name": "Config packet (fPort 3, 9 bytes)",
+    "input": {
+      "fPort": 3,
+      "bytes": [
+        0,
+        15,
+        0,
+        0,
+        5,
+        3,
+        3,
+        30,
+        20
+      ]
+    },
+    "expected": {
+      "data": {
+        "Status": 0,
+        "SendPeriod": 15,
+        "MovementThreshold": 0,
+        "PacketConfirm": 0,
+        "DataRate": 5,
+        "FamilyId": 3,
+        "ProductId": 3,
+        "HW": 3,
+        "FW": 2
+      },
+      "warnings": [],
+      "errors": []
+    }
+  },
+  {
+    "name": "Shall not pass - unsupported fPort is rejected, not silently decoded",
+    "input": {
+      "fPort": 99,
+      "bytes": [
+        1,
+        2,
+        3
+      ]
+    },
+    "expected": {
+      "data": {},
+      "warnings": [],
+      "errors": [
+        "Unsupported FPort or packet length"
+      ]
+    }
+  }
+]
