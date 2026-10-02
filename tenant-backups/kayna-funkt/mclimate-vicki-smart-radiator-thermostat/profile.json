@@ -79,6 +79,178 @@
       "kind": "UNKNOWN",
       "name": ""
     },
+    "heatingEventGroup": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "heatingEventStates_0": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "heatingEventStates_1": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "heatingEventStates_10": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "heatingEventStates_11": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "heatingEventStates_12": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "heatingEventStates_13": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "heatingEventStates_14": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "heatingEventStates_15": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "heatingEventStates_16": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "heatingEventStates_17": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "heatingEventStates_18": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "heatingEventStates_19": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "heatingEventStates_2": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "heatingEventStates_3": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "heatingEventStates_4": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "heatingEventStates_5": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "heatingEventStates_6": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "heatingEventStates_7": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "heatingEventStates_8": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "heatingEventStates_9": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "heatingEvents_0_index": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "heatingEvents_0_start": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "heatingEvents_0_targetTemperature": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "heatingEvents_0_weekdays_friday": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "heatingEvents_0_weekdays_monday": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "heatingEvents_0_weekdays_saturday": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "heatingEvents_0_weekdays_sunday": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "heatingEvents_0_weekdays_thursday": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "heatingEvents_0_weekdays_tuesday": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "heatingEvents_0_weekdays_wednesday": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "heatingEvents_1_index": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "heatingEvents_1_start": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "heatingEvents_1_targetTemperature": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "heatingEvents_1_weekdays_friday": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "heatingEvents_1_weekdays_monday": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "heatingEvents_1_weekdays_saturday": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "heatingEvents_1_weekdays_sunday": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "heatingEvents_1_weekdays_thursday": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "heatingEvents_1_weekdays_tuesday": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "heatingEvents_1_weekdays_wednesday": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "heatingSchedule_end": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "heatingSchedule_start": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
     "highMotorConsumption": {
       "kind": "STRING",
       "name": "highMotorConsumption"
