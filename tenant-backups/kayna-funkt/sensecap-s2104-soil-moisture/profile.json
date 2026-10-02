@@ -2,7 +2,14 @@
   "abp_params": null,
   "adr_algorithm_id": "default",
   "allow_roaming": false,
-  "app_layer_params": {},
+  "app_layer_params": {
+    "ts003_f_port": 202,
+    "ts003_version": null,
+    "ts004_f_port": 201,
+    "ts004_version": null,
+    "ts005_f_port": 200,
+    "ts005_version": null
+  },
   "auto_detect_measurements": true,
   "class_b_params": null,
   "class_c_params": null,
@@ -11,7 +18,44 @@
   "firmware_version": "",
   "flush_queue_on_activate": true,
   "mac_version": "1.0.3",
-  "measurements": {},
+  "measurements": {
+    "err": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "messages_0_measurementId": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "messages_0_measurementValue": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "messages_0_type": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "messages_1_measurementId": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "messages_1_measurementValue": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "messages_1_type": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "payload": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "valid": {
+      "kind": "UNKNOWN",
+      "name": ""
+    }
+  },
   "name": "SenseCAP S2104 Soil Moisture",
   "payload_codec_runtime": "JS",
   "reg_params_revision": "A",

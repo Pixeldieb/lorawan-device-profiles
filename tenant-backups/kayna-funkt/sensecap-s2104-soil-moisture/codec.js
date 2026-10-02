@@ -1,4 +1,4 @@
-function DecodeUplink(input) {
+function decodeUplink(input) {
   var bytes = input.bytes;
   var fPort = input.fPort;
 
