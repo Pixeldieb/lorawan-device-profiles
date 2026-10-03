@@ -47,6 +47,22 @@
       "kind": "UNKNOWN",
       "name": ""
     },
+    "messages_2_battery": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "messages_2_type": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "messages_3_interval": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "messages_3_type": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
     "payload": {
       "kind": "UNKNOWN",
       "name": ""
