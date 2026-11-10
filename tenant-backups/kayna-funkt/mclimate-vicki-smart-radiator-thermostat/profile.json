@@ -243,6 +243,46 @@
       "kind": "UNKNOWN",
       "name": ""
     },
+    "heatingEvents_2_index": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "heatingEvents_2_start": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "heatingEvents_2_targetTemperature": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "heatingEvents_2_weekdays_friday": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "heatingEvents_2_weekdays_monday": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "heatingEvents_2_weekdays_saturday": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "heatingEvents_2_weekdays_sunday": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "heatingEvents_2_weekdays_thursday": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "heatingEvents_2_weekdays_tuesday": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "heatingEvents_2_weekdays_wednesday": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
     "heatingSchedule_end": {
       "kind": "UNKNOWN",
       "name": ""
