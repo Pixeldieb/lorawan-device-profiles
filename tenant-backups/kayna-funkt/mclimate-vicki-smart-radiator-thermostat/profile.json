@@ -299,6 +299,22 @@
       "kind": "STRING",
       "name": "integralGain"
     },
+    "integralValue": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "internalAlgoParams_pFirstLast": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "internalAlgoParams_pNext": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "internalAlgoParams_period": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
     "internalAlgoTempState": {
       "kind": "UNKNOWN",
       "name": ""
@@ -407,6 +423,30 @@
       "kind": "STRING",
       "name": "tempHysteresis"
     },
+    "temperatureLevels_level0": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "temperatureLevels_level1": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "temperatureLevels_level2": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "temperatureLevels_level3": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "temperatureLevels_level4": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "temperatureLevels_level5": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
     "temperatureOffset": {
       "kind": "UNKNOWN",
       "name": ""
@@ -418,6 +458,10 @@
     "temperatureRangeSettings_min": {
       "kind": "GAUGE",
       "name": "temperatureRangeSettings_min"
+    },
+    "timeRequestByMACcommand": {
+      "kind": "UNKNOWN",
+      "name": ""
     },
     "uplinkType": {
       "kind": "STRING",
