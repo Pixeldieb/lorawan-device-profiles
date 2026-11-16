@@ -299,6 +299,10 @@
       "kind": "STRING",
       "name": "integralGain"
     },
+    "internalAlgoTempState": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
     "joinRetryPeriod": {
       "kind": "UNKNOWN",
       "name": ""
@@ -326,6 +330,14 @@
     "motorRange": {
       "kind": "STRING",
       "name": "motorRange"
+    },
+    "notifications_temperatureChangedByHeatingSchedule": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
+    "notifications_temperatureRestoredAfterManualBoost": {
+      "kind": "UNKNOWN",
+      "name": ""
     },
     "offlineTargetTemperature": {
       "kind": "UNKNOWN",
