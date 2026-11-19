@@ -1,6 +1,18 @@
 [
   {
     "codec": "codec.js",
+    "name": "MClimate Vicki - Smart Radiator Thermostat",
+    "path": "gemeinde-wethautal/mclimate-vicki-smart-radiator-thermostat",
+    "tenant": "Gemeinde Wethautal"
+  },
+  {
+    "codec": "codec.js",
+    "name": "Sentinum Febris",
+    "path": "gemeinde-wethautal/sentinum-febris",
+    "tenant": "Gemeinde Wethautal"
+  },
+  {
+    "codec": "codec.js",
     "name": "DEOS Co2 Raumluftampel 2020",
     "path": "kayna-funkt/deos-co2-raumluftampel-2020",
     "tenant": "Kayna-Funkt"
