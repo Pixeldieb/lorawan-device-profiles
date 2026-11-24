@@ -331,6 +331,10 @@
       "kind": "GAUGE",
       "name": "keepAliveTime"
     },
+    "ledIndicationDuration": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
     "lowMotorConsumption": {
       "kind": "STRING",
       "name": "lowMotorConsumption"
