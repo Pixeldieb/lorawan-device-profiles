@@ -19,6 +19,10 @@
   "flush_queue_on_activate": true,
   "mac_version": "1.0.3",
   "measurements": {
+    "OVAC": {
+      "kind": "UNKNOWN",
+      "name": ""
+    },
     "algoType": {
       "kind": "UNKNOWN",
       "name": ""
